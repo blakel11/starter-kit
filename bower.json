@@ -1,0 +1,12 @@
+{
+  "name": "giftutors-",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "animate.css": "~3.2.6"
+  }
+}

@@ -1,0 +1,16 @@
+// ==========================================================================
+// Utilities
+// ==========================================================================
+
+// Import if Google Fonts URL is defined
+
+@if varible-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+// Functions and Directives
+
+@function em($target, $content: $base__font) {
+  @return ($target / $content) * 1em;
+}
+// Mixins
