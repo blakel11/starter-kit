@@ -3,9 +3,9 @@
 @import 'utilities';
 @import 'reset';
 @import 'base';
-@import './stylesheets/bourbon'; // http://bourbon.io/
+@import 'stylesheets/bourbon'; // http://bourbon.io/
 @import 'elastic-menu';
 @import 'search';
-//@import 'content-filter';
-//@import 'zoe';
+@import 'content-filter';
+@import 'zoe';
 @import 'blog-main';

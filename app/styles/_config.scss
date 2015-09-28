@@ -115,3 +115,43 @@ $maxL:    $L - 1px;
   float: $float-direction;
 }
 
+// center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+// colors
+
+$color-5: #331d35; // Bleached Cedar
+$color-6: #41307c; // Minsk
+$color-7: #ffffff; // White
+$color-8: #9a9a9a; // Grey
+
+// fonts
+
+$primary-font-2: 'Open Sans', sans-serif;
+
+// tab-filter size
+
+$tab-filter-height: 50px;
+
+$i : !important;
+
+$content-filter-color: black;
