@@ -52,3 +52,66 @@ $color-shadow     : rgba($black,.2);
 
 $base__font-size  : 16px;
 $base__line       : 24px;
+
+// colors
+
+$color-1: #2e3233; // grey dark
+$color-2: #69aa6f; // green
+$color-3: #e2e3df; // grey light
+$color-4: #ffffff; // white
+
+// fonts
+
+$primary-font: sans-serif;
+
+// header size
+
+$header-height-S: 50px;
+$header-height-L: 90px;
+
+// Navigation size
+
+$nav-width-S: 260px;
+
+// Search size
+
+$search-height-S: 50px;
+$search-height-L: 120px;
+
+// z-index
+
+$below-content: 1;
+$content: 2;
+$above-content: 3;
+
+// breakpoints
+
+$S:     480px;
+$M:     768px;
+$L:     1170px;
+$maxL:    $L - 1px;
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+  @else if $canvas == maxL {
+    @media only screen and (max-width: $maxL) { @content; }
+  }
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+@mixin column($percentage, $float-direction:left) {
+  width: 100% * $percentage;
+  float: $float-direction;
+}
+
