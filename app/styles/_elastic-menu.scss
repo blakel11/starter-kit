@@ -317,7 +317,7 @@ body #cdawrap {
 }
 
 .menu {
-  background: #373a47;
+  background: $dark-color;
   width: calc(100% - 120px);
   height: 100%;
   padding: 2em 1em;
@@ -341,7 +341,7 @@ body #cdawrap {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 0.75em;
+  font-size: 1.5rem;
 }
 
 /* Morph Shape */
@@ -351,7 +351,7 @@ body #cdawrap {
   height: 100%;
   top: 0;
   right: 0;
-  fill: #373a47;
+  fill: $dark-color;
   z-index: 1000;
 }
 

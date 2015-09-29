@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+body {
+  background: $light-grey $i;
+}
+
 // ==========================================================================
 // Menu
 // ==========================================================================
@@ -76,7 +80,7 @@ div.menu-wrap {
     .header-right {
       float: left;
       position: absolute;
-      right: 25px;
+      right: 5%;
       padding: 0;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
@@ -145,7 +149,7 @@ div.menu-wrap {
   .header-right {
     float: left;
     position: absolute;
-    right: 25px;
+    right: 5%;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
@@ -174,6 +178,7 @@ div.menu-wrap {
     vertical-align: middle;
     text-align: right;
     font-size: 0;
+    margin-top: 8px;
 
     .social-link {
       height: 30px;
@@ -236,8 +241,42 @@ div.menu-wrap {
   transition: all 0.15s linear;
 
   img {
-    height: 60px;
+    height: 50px;
     width: auto;
-    margin: 15px 0;
+    margin: 20px 0;
   }
+}
+
+.fa-facebook, .fa-twitter {
+  color: $social-icon-colors;
+  font-size: 30px;
+
+  &:hover {
+    color: $social-icon-colors-hover $i;
+  }
+}
+
+
+.cd-search-trigger span::before, .cd-search-trigger span::after {
+  color: $social-icon-colors $i;
+  border-color: $social-icon-colors $i;
+  background-color: $social-icon-colors $i;
+}
+
+.cd-search-trigger span:hover:before, .cd-search-trigger span:hover:after {
+  color: $social-icon-colors-hover $i;
+  border-color: $social-icon-colors-hover $i;
+  background: $social-icon-colors-hover $i;
+}
+
+.cd-search-trigger {
+  bottom: 8px;
+}
+
+.menu-button:before {
+  color: $social-icon-colors $i;
+}
+
+.menu-button:hover:before {
+  color: $social-icon-colors-hover $i;
 }
