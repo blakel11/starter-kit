@@ -18,23 +18,13 @@ body {
 // ==========================================================================
 // Menu
 // ==========================================================================
-menu.menu-button {
-  width: 60px ;
-  height: 54px;
-  margin: 18px 0 18px 5%;
-}
 
-div.menu-wrap {
-  z-index: 1500;
-  position: fixed;
-  top: 0;
-}
 .main-header {
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
-  height: 90px;
+  height: $header-height-mobile;
   text-align: center;
   margin: 0 auto;
   position: fixed;
@@ -42,6 +32,10 @@ div.menu-wrap {
   width: 100%;
   background-color: white;
   z-index: 1200;
+
+  @media (min-width: $xs-breakpoint) {
+    height: $header-height-L;
+  }
 
 
   &.condensed {
@@ -149,17 +143,17 @@ div.menu-wrap {
   .header-right {
     float: left;
     position: absolute;
-    right: 5%;
+    right: 4%;
+    margin-top: 15px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
-  }
-  .header-right-social {
-    display: block;
-    vertical-align: middle;
-    text-align: right;
-    font-size: 0;
+
+    @media (min-width: $xs-breakpoint) {
+      margin-top: 30px;
+      right: 5%;
+    }
   }
 
   .header-item {
@@ -171,6 +165,13 @@ div.menu-wrap {
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
     cursor: pointer;
+    display: none;
+
+    .social-link {
+      @media (min-width: $xs-breakpoint) {
+        display: inline-block;
+      }
+    }
   }
 
   .header-right-social {
@@ -178,13 +179,6 @@ div.menu-wrap {
     vertical-align: middle;
     text-align: right;
     font-size: 0;
-    margin-top: 8px;
-
-    .social-link {
-      height: 30px;
-      font-size: 0;
-      display: inline-block;
-    }
 
     .icon {
       -webkit-transition: all 0.15s linear;
@@ -219,7 +213,7 @@ div.menu-wrap {
   }
 } // end of main-header
 
-.brand-logo-subbrand, .brand-logo-giftutors {
+.brand-logo-giftutors {
   //  background-image: url('/images/logo.png');
   // background-repeat: no-repeat;
   display: inline-block;
@@ -241,18 +235,28 @@ div.menu-wrap {
   transition: all 0.15s linear;
 
   img {
-    height: 50px;
+    height: 25px;
     width: auto;
-    margin: 20px 0;
+    margin: 15px 0;
+
+    @media (min-width: $xs-breakpoint) {
+      height: 50px;
+      width: auto;
+      margin: 20px 0;
+    }
   }
 }
 
 .fa-facebook, .fa-twitter {
   color: $social-icon-colors;
-  font-size: 30px;
+  font-size: 20px;
+  margin: 0 8px;
 
   &:hover {
-    color: $social-icon-colors-hover $i;
+    color: $social-icon-colors-hover;
+  }
+  @media (min-width: $xs-breakpoint) {
+    font-size: 30px;
   }
 }
 

@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: cover;
-  margin-top: 90px;
+  margin-top: $header-height-mobile;
+
+  @media (min-width:$xs-breakpoint) {
+    margin-top: 90px;
+  }
 }
 

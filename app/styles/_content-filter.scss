@@ -68,9 +68,14 @@ Main Components
   &.is-fixed {
     .cd-tab-filter-wrapper {
       position: fixed;
-      top: 0;
+      top: $header-height-mobile;
       left: 0;
       width: 100%;
+      box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+
+      @media (min-width: $xs-breakpoint) {
+        top: $header-height-S;
+      }
     }
 
 
@@ -78,6 +83,11 @@ Main Components
       position: fixed;
       height: 100vh;
       overflow: hidden;
+      top: $header-height-mobile;
+
+      @media (min-width: $xs-breakpoint) {
+        top: initial;
+      }
 
       form {
         height: 100vh;
@@ -88,6 +98,7 @@ Main Components
 
     .cd-filter-trigger {
       position: fixed;
+      top: $header-height-mobile;
     }
 
     @include MQ(M) {
@@ -115,6 +126,10 @@ xtab-filter
   box-shadow: 0 1px 1px rgba(#000, .08);
   z-index: 1;
   @include clearfix;
+
+  .is-fixed & {
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .cd-tab-filter {
@@ -146,9 +161,9 @@ xtab-filter
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
 
     background-color: $color-7;
-    box-shadow: inset 0 -2px 0 $color-6;
   }
 
   li {

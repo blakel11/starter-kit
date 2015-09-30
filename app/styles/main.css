@@ -211,22 +211,12 @@ th {
 body {
   background: #f8f5f3 !important; }
 
-menu.menu-button {
-  width: 60px;
-  height: 54px;
-  margin: 18px 0 18px 5%; }
-
-div.menu-wrap {
-  z-index: 1500;
-  position: fixed;
-  top: 0; }
-
 .main-header {
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
-  height: 90px;
+  height: 55px;
   text-align: center;
   margin: 0 auto;
   position: fixed;
@@ -234,6 +224,9 @@ div.menu-wrap {
   width: 100%;
   background-color: white;
   z-index: 1200; }
+  @media (min-width: 468px) {
+    .main-header {
+      height: 90px; } }
   .main-header.condensed {
     -webkit-transition: all 0.25s linear;
     -moz-transition: all 0.25s linear;
@@ -312,16 +305,16 @@ div.menu-wrap {
   .main-header .header-right {
     float: left;
     position: absolute;
-    right: 5%;
+    right: 4%;
+    margin-top: 15px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear; }
-  .main-header .header-right-social {
-    display: block;
-    vertical-align: middle;
-    text-align: right;
-    font-size: 0; }
+    @media (min-width: 468px) {
+      .main-header .header-right {
+        margin-top: 30px;
+        right: 5%; } }
   .main-header .header-item {
     position: relative;
     padding: 30px 10px;
@@ -330,17 +323,16 @@ div.menu-wrap {
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
+    @media (min-width: 468px) {
+      .main-header .header-item .social-link {
+        display: inline-block; } }
   .main-header .header-right-social {
     display: block;
     vertical-align: middle;
     text-align: right;
-    font-size: 0;
-    margin-top: 8px; }
-    .main-header .header-right-social .social-link {
-      height: 30px;
-      font-size: 0;
-      display: inline-block; }
+    font-size: 0; }
     .main-header .header-right-social .icon {
       -webkit-transition: all 0.15s linear;
       -moz-transition: all 0.15s linear;
@@ -368,7 +360,7 @@ div.menu-wrap {
   .main-header .icon-search:before {
     content: "\e61c"; }
 
-.brand-logo-subbrand, .brand-logo-giftutors {
+.brand-logo-giftutors {
   display: inline-block;
   position: relative;
   bottom: 0;
@@ -382,16 +374,25 @@ div.menu-wrap {
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear; }
-  .brand-logo-subbrand img, .brand-logo-giftutors img {
-    height: 50px;
+  .brand-logo-giftutors img {
+    height: 25px;
     width: auto;
-    margin: 20px 0; }
+    margin: 15px 0; }
+    @media (min-width: 468px) {
+      .brand-logo-giftutors img {
+        height: 50px;
+        width: auto;
+        margin: 20px 0; } }
 
 .fa-facebook, .fa-twitter {
   color: #333;
-  font-size: 30px; }
+  font-size: 20px;
+  margin: 0 8px; }
   .fa-facebook:hover, .fa-twitter:hover {
-    color: #3abbca !important; }
+    color: #3abbca; }
+  @media (min-width: 468px) {
+    .fa-facebook, .fa-twitter {
+      font-size: 30px; } }
 
 .cd-search-trigger span::before, .cd-search-trigger span::after {
   color: #333 !important;
@@ -617,15 +618,20 @@ body #cdawrap {
 .menu-button {
   position: fixed;
   z-index: 1000;
-  margin: 1rem 0;
   padding: 0;
-  width: 2.5em;
-  height: 2.25em;
   border: none;
   text-indent: 2.5em;
   font-size: 1.5em;
   color: transparent;
-  background: transparent; }
+  background: transparent;
+  width: 40px;
+  height: 34px;
+  margin: 9px 0 9px 4%; }
+  @media (min-width: 468px) {
+    .menu-button {
+      width: 60px;
+      height: 54px;
+      margin: 18px 0 18px 5%; } }
 
 .menu-button::before {
   position: absolute;
@@ -673,8 +679,9 @@ body #cdawrap {
 
 /* Menu */
 .menu-wrap {
-  position: absolute;
-  z-index: 1001;
+  z-index: 1500;
+  position: fixed;
+  top: 0;
   width: 300px;
   height: 100%;
   font-size: 1.15em;
@@ -791,7 +798,7 @@ Main components
   min-height: 100vh;
   z-index: 2; }
 .main-header .cd-main-header {
-  height: 50px;
+  height: 90px;
   background: #ffffff;
   z-index: 3; }
   .nav-is-fixed .main-header .cd-main-header {
@@ -825,8 +832,7 @@ Main components
 
 .cd-header-buttons {
   position: relative;
-  display: inline-block;
-  top: 22px; }
+  display: inline-block; }
   .cd-header-buttons li {
     display: inline-block; }
   @media only screen and (max-width: 1169px) {
@@ -1483,7 +1489,7 @@ Main components
   position: absolute;
   height: 50px;
   width: 100%;
-  top: 50px;
+  top: 55px;
   left: 0;
   z-index: 3;
   opacity: 0;
@@ -1491,6 +1497,9 @@ Main components
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s; }
+  @media (min-width: 468px) {
+    .cd-search {
+      top: 90px; } }
   .cd-search form {
     height: 100%;
     width: 100%; }
@@ -1665,19 +1674,28 @@ Main Components
     display: table; }
   .cd-main-content.is-fixed .cd-tab-filter-wrapper {
     position: fixed;
-    top: 0;
+    top: 55px;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); }
+    @media (min-width: 468px) {
+      .cd-main-content.is-fixed .cd-tab-filter-wrapper {
+        top: 90px; } }
   .cd-main-content.is-fixed .cd-filter {
     position: fixed;
     height: 100vh;
-    overflow: hidden; }
+    overflow: hidden;
+    top: 55px; }
+    @media (min-width: 468px) {
+      .cd-main-content.is-fixed .cd-filter {
+        top: initial; } }
     .cd-main-content.is-fixed .cd-filter form {
       height: 100vh;
       overflow: auto;
       -webkit-overflow-scrolling: touch; }
   .cd-main-content.is-fixed .cd-filter-trigger {
-    position: fixed; }
+    position: fixed;
+    top: 55px; }
   @media only screen and (min-width: 768px) {
     .cd-main-content.is-fixed .cd-gallery {
       padding-top: 90px; } }
@@ -1698,6 +1716,8 @@ xtab-filter
     clear: both;
     content: "";
     display: table; }
+  .is-fixed .cd-tab-filter-wrapper {
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); }
 
 .cd-tab-filter {
   /* tabbed navigation style on mobile - dropdown */
@@ -1730,8 +1750,8 @@ xtab-filter
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #ffffff;
-    box-shadow: inset 0 -2px 0 #41307c; }
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff; }
   .cd-tab-filter li {
     display: none; }
     .cd-tab-filter li:first-child {
@@ -2376,7 +2396,7 @@ section {
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 .grid figure figcaption {
   padding: 2em;
@@ -3206,18 +3226,27 @@ figure.effect-zoe:hover p.icon-links a:focus {
   color: #252d31; }
 
 figure.effect-zoe p.description {
+  left: 5px;
   position: absolute;
-  top: 2.8em;
-  padding: 2em 1em;
+  bottom: 2.6em;
+  padding: 2em .3em 1em;
   color: #fff;
   text-transform: none;
   font-size: 19px;
   font-weight: 600;
-  text-shadow: 0 0 3px #222;
+  text-shadow: 0 0 3px #000;
+  font-family: Roboto, sans-serif;
   -webkit-transition: 0.35s;
   transition: 0.35s;
   -webkit-backface-visibility: hidden;
-  /* Fix for Chrome 37.0.2062.120 (Mac) */ }
+  /* Fix for Chrome 37.0.2062.120 (Mac) */
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.2)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0); }
   @media (min-width: 468px) {
     figure.effect-zoe p.description {
       top: 3.8em; } }
@@ -3347,6 +3376,9 @@ figure.effect-chico:hover p {
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: cover;
-  margin-top: 90px; }
+  margin-top: 55px; }
+  @media (min-width: 468px) {
+    .hero-article {
+      margin-top: 90px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -111,7 +111,6 @@ Main components
 .cd-header-buttons {
   position: relative;
   display: inline-block;
-  top: 22px;
 
   li {
     display: inline-block;
@@ -854,7 +853,7 @@ Main components
   position: absolute;
   height: $search-height-S;
   width: 100%;
-  top: $header-height-S;
+  top: $header-height-mobile;
   left: 0;
   z-index: $above-content;
   opacity: 0;
@@ -862,6 +861,10 @@ Main components
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
+
+  @media (min-width: $xs-breakpoint) {
+    top: $header-height-L;
+  }
 
   form {
     height: 100%;
