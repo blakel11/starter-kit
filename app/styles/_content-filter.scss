@@ -286,11 +286,12 @@ xgallery
 -------------------------------- */
 
 .cd-gallery {
-    padding: 26px 0;
+    padding: 47px 0 26px;
 
     @media (min-width:$xs-breakpoint) {
       padding-left: 5%;
       padding-right: 5%;
+      padding: 26px 0;
     }
 
     > ul {
@@ -302,9 +303,13 @@ xgallery
     }
 
   li {
-    margin-bottom: 1.6em;
+
    // box-shadow: 0 1px 4px rgba(#000, .1);
     display: none;
+
+    @media (min-width: $xs-breakpoint) {
+      margin-bottom: 1.6em;
+    }
 
     &.gap {
       /* used in combination with text-align: justify to align gallery elements */

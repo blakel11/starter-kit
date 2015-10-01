@@ -384,14 +384,14 @@ body {
         width: auto;
         margin: 20px 0; } }
 
-.fa-facebook, .fa-twitter {
+.fa-facebook, .fa-twitter, .fa-comment {
   color: #333;
   font-size: 20px;
   margin: 0 8px; }
-  .fa-facebook:hover, .fa-twitter:hover {
+  .fa-facebook:hover, .fa-twitter:hover, .fa-comment:hover {
     color: #3abbca; }
   @media (min-width: 468px) {
-    .fa-facebook, .fa-twitter {
+    .fa-facebook, .fa-twitter, .fa-comment {
       font-size: 30px; } }
 
 .cd-search-trigger span::before, .cd-search-trigger span::after {
@@ -412,6 +412,24 @@ body {
 
 .menu-button:hover:before {
   color: #3abbca !important; }
+
+.grid figure img.author-img {
+  height: 25px;
+  width: 25px !important;
+  min-height: initial !important;
+  display: inline-block;
+  float: left; }
+
+.grid figure p.icon-links {
+  float: right;
+  display: inline-block;
+  margin-top: 2px; }
+
+.grid figure p.author-info {
+  float: left;
+  margin: 7px 0 5px 10px; }
+  .grid figure p.author-info span {
+    font-weight: 600; }
 
 @font-face {
   font-weight: normal;
@@ -1835,19 +1853,22 @@ xgallery
 
 -------------------------------- */
 .cd-gallery {
-  padding: 26px 0; }
+  padding: 47px 0 26px; }
   @media (min-width: 468px) {
     .cd-gallery {
       padding-left: 5%;
-      padding-right: 5%; } }
+      padding-right: 5%;
+      padding: 26px 0; } }
   .cd-gallery > ul {
     padding-left: 0; }
     @media (min-width: 768px) {
       .cd-gallery > ul {
         padding-left: 40px; } }
   .cd-gallery li {
-    margin-bottom: 1.6em;
     display: none; }
+    @media (min-width: 468px) {
+      .cd-gallery li {
+        margin-bottom: 1.6em; } }
     .cd-gallery li.gap {
       /* used in combination with text-align: justify to align gallery elements */
       opacity: 0;
@@ -2372,10 +2393,13 @@ section {
 .grid {
   position: relative;
   margin: 0 auto;
-  padding: 1em 0 4em;
+  padding: 1em 0 0;
   max-width: 1000px;
   list-style: none;
   text-align: center; }
+  @media (min-width: 468px) {
+    .grid {
+      padding: 1em 0 4em; } }
 
 /* Common style */
 .grid figure {
@@ -3199,10 +3223,13 @@ figure.effect-sarah:hover p {
 /*---------------*/
 /***** Zoe *****/
 /*---------------*/
+figcaption {
+  padding-top: .75em; }
+
 figure.effect-zoe figcaption {
   top: auto;
   bottom: 0;
-  padding: 1em;
+  padding: .95em 1em 1em;
   height: 3.75em;
   background: #fff;
   color: #3c4a50; }
@@ -3368,7 +3395,7 @@ figure.effect-chico:hover p {
   .grid figure {
     display: inline-block;
     float: none;
-    margin: 10px auto;
+    margin: 0 auto;
     width: 100%; } }
 .hero-article {
   background: url("http://splitshire.com/wp-content/uploads/2014/06/SplitShire_IMG_9572.jpg");

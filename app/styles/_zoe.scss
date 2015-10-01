@@ -206,10 +206,14 @@ section {
 .grid {
   position: relative;
   margin: 0 auto;
-  padding: 1em 0 4em;
+  padding: 1em 0 0;
   max-width: 1000px;
   list-style: none;
   text-align: center;
+
+  @media (min-width: $xs-breakpoint) {
+    padding: 1em 0 4em;
+  }
 }
 
 /* Common style */
@@ -1174,10 +1178,14 @@ figure.effect-sarah:hover p {
 /***** Zoe *****/
 /*---------------*/
 
+figcaption {
+  padding-top: .75em;
+}
+
 figure.effect-zoe figcaption {
   top: auto;
   bottom: 0;
-  padding: 1em;
+  padding: .95em 1em 1em;
   height: 3.75em;
   background: #fff;
   color: #3c4a50;
@@ -1374,7 +1382,7 @@ figure.effect-chico:hover p {
   .grid figure {
     display: inline-block;
     float: none;
-    margin: 10px auto;
+    margin: 0 auto;
     width: 100%;
   }
 }

@@ -247,7 +247,7 @@ body {
   }
 }
 
-.fa-facebook, .fa-twitter {
+.fa-facebook, .fa-twitter, .fa-comment {
   color: $social-icon-colors;
   font-size: 20px;
   margin: 0 8px;
@@ -284,3 +284,27 @@ body {
 .menu-button:hover:before {
   color: $social-icon-colors-hover $i;
 }
+
+.grid figure img.author-img {
+  height: 25px;
+  width: 25px $i;
+  min-height: initial $i;
+  display: inline-block;
+  float: left;
+}
+
+.grid figure p.icon-links {
+  float: right;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.grid figure p.author-info {
+  float: left;
+  margin: 7px 0 5px 10px;
+
+  span {
+    font-weight: 600;
+  }
+}
+
