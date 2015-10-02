@@ -36,6 +36,15 @@
     <script src="scripts/snap.svg-min.js"></script>
   </head>
   <body>
+  <div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+      <h3>Copy the link</h3>
+      <div>
+        <button class="md-close">http://bit.ly</button>
+      </div>
+    </div>
+  </div>
+  <div class="md-overlay"></div>
   <div class="menu-wrap">
     <nav class="menu">
       <div class="icon-list">
@@ -102,7 +111,6 @@
         </ul> <!-- cd-filters -->
       </div> <!-- cd-tab-filter -->
     </div> <!-- cd-tab-filter-wrapper -->
-
     <section class="cd-gallery">
       <ul>
         <li class="mix color-1 check1 radio2 option3"><div class="grid">
@@ -115,7 +123,7 @@
               <p class="icon-links">
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-comment"></i></a>
+              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
               </p>
             </figcaption>
           </figure>
@@ -126,11 +134,11 @@
             <p class="description">iOS 9 Notes App on iPhone is Amazeballs. But first–upgrade and resync your notes.</p>
             <figcaption>
               <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span> 9/30/2015</p>
+              <cite class="author-info">By: <span>Blake Lieberman</span> 9/30/2015</cite>
               <p class="icon-links">
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-comment"></i></a>
+                <div class="inline-element md-trigger" data-modal="modal-1"><i class="fa fa-comment"></i></div>
               </p>
             </figcaption>
           </figure>
@@ -287,15 +295,28 @@
 
     <a href="#0" class="cd-filter-trigger">Filters</a>
   </main> <!-- cd-main-content -->
+
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="scripts/jquery.mobile.custom.min.js"></script>
   <script src="scripts/jquery.mixitup.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!-- classie.js by @desandro: https://github.com/desandro/classie -->
   <script src="scripts/classie.js"></script>
   <script src="scripts/main3.js"></script>
   <script src="scripts/search.js"></script>
   <script src="scripts/filter.js"></script>
+  <script src="scripts/modalEffects.js"></script>
+
+  <!-- for the blur effect -->
+  <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/scripts/';
+  </script>
+  <script src="scripts/cssParser.js"></script>
+  <script src="scripts/css-filters-polyfill.js">
     <!-- build:js(app/) ../../scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
