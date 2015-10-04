@@ -43,6 +43,9 @@ Main Components
         top: $header-height-S;
       }
     }
+    .cd-gallery {
+      padding-top: 25px;
+    }
 
 
     .cd-filter {
@@ -65,13 +68,13 @@ Main Components
 
     @include MQ(M) {
       .cd-gallery {
-        padding-top: 40px+$tab-filter-height;
+        padding-top: 0px+$tab-filter-height;
       }
     }
 
     @include MQ(L) {
       .cd-gallery {
-        padding-top: 50px+$tab-filter-height;
+        padding-top: 0px+$tab-filter-height;
       }
     }
   }
@@ -98,6 +101,7 @@ xtab-filter
   /* tabbed navigation style on mobile - dropdown */
   position: relative;
   width: 140px;
+  height: 52px;
   margin: 0 auto;
   z-index: 1;
 
@@ -248,12 +252,11 @@ xgallery
 -------------------------------- */
 
 .cd-gallery {
-    padding: 47px 0 26px;
+    padding: 0px 0 26px;
 
     @media (min-width:$xs-breakpoint) {
       padding-left: 5%;
       padding-right: 5%;
-      padding: 26px 0;
     }
 
     > ul {
@@ -293,11 +296,11 @@ xgallery
   }
 
   @include MQ(M) {
-    padding: 40px 3%;
+    padding: 0px 3%;
 
     ul {
       @include clearfix;
-      text-align: justify;
+      text-align: center;
     }
 
     li {
@@ -307,7 +310,7 @@ xgallery
   }
 
   @include MQ(L) {
-    padding: 50px 2%;
+    padding: 0px 2%;
     float: right;
     @include transition(width .3s);
 
