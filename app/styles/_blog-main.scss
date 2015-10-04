@@ -11,7 +11,7 @@
   background-size: cover;
   margin-top: $header-height-mobile;
 
-  @media (min-width:$xs-breakpoint) {
+  @media (min-width:$sm-breakpoint) {
     margin-top: 90px;
   }
 }

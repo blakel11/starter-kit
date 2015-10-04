@@ -1,0 +1,240 @@
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 0;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+
+  @media (min-width: $xs-breakpoint) {
+    padding: 1em 0 4em;
+  }
+
+  figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: $grid-overlay;
+    text-align: center;
+    cursor: pointer;
+
+    &.effect-zoe {
+
+    }
+
+    img {
+      position: relative;
+      display: block;
+      height: 290px;
+      max-width: 100%;
+      opacity: 0.9;
+
+      @media (min-width: $xs-breakpoint) {
+        height: initial;
+        min-height: 100%;
+      }
+    }
+
+    figcaption {
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+
+      &::before, &::after {
+        pointer-events: none;
+      }
+
+      /* Anchor will cover the whole item by default */
+      /* For some effects it will show as a button */
+
+      > a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+    }
+
+    h2 {
+      word-spacing: -0.15em;
+      font-weight: 300;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    p {
+      letter-spacing: 1px;
+      font-size: 68.5%;
+    }
+  }
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+figcaption {
+  padding-top: .75em;
+}
+
+figure.effect-zoe {
+  figcaption {
+    top: auto;
+    bottom: 0;
+    padding: .95em 1em 1em;
+    height: 3.75em;
+    background: #fff;
+    color: #3c4a50;
+
+    @media (min-width:$sm-breakpoint) {
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(0,100%,0);
+      transform: translate3d(0,100%,0);
+    }
+  }
+
+  h2 {
+    float: left;
+  }
+}
+
+figure.effect-zoe p.icon-links a {
+  float: right;
+  color: #3c4a50;
+  font-size: 1.4em;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+  color: #252d31;
+}
+
+figure.effect-zoe p.description {
+  position: absolute;
+  bottom: 2.6em;
+  padding: 2em .3em 1em;
+  color: #fff;
+  text-transform: none;
+  font-size: 19px;
+  font-weight: 600;
+  text-shadow: 0 0 3px #000;
+  font-family: Roboto, sans-serif;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+  background: -moz-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%,rgba(0,0,0,0.0) 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(50%,rgba(0,0,0,0.20)),color-stop(100%,rgba(0,0,0,0.0)));
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%,rgba(0,0,0,0.0) 100%);
+  background: -o-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%);
+  background: -ms-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0);
+
+
+  @media (min-width:$xs-breakpoint) {
+    top: 3.8em;
+  }
+  @media (min-width:$sm-breakpoint) {
+    top: 1.5em;
+  }
+}
+
+figure.effect-zoe:hover p.description {
+  @media (min-width:$sm-breakpoint) {
+    top: .5em;
+  }
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+  @media (min-width: $sm-breakpoint) {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
+  }
+}
+
+figure.effect-zoe p.icon-links a span::before {
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: 'feathericons';
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+figure.effect-zoe h2 {
+  display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+  opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

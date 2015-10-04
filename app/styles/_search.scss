@@ -6,7 +6,7 @@ Primary style
 -------------------------------- */
 .main-header {
   input[type="search"] {
-    line-height: 3.5rem;
+    line-height: 3rem;
   }
 
   *, *::after, *::before {
@@ -111,6 +111,7 @@ Main components
 .cd-header-buttons {
   position: relative;
   display: inline-block;
+  float: left;
 
   li {
     display: inline-block;
@@ -164,6 +165,12 @@ Main components
     height: 18px;
     border-radius: 50%;
     border: 3px solid $color-1;
+    @include quick-transition;
+
+    @media (min-width:$sm-breakpoint) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &::after {
@@ -174,6 +181,13 @@ Main components
     bottom: 14px;
     right: 11px;
     @include transform(rotate(45deg));
+    @include quick-transition;
+
+    @media (min-width: $sm-breakpoint) {
+      width: 9px;
+      bottom: 8px;
+      right: 5px;
+    }
   }
 
   span {
@@ -203,6 +217,12 @@ Main components
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     @include transition(opacity .3s, transform .3s);
+
+    @media (min-width: $xs-breakpoint) {
+      width: 30px;
+      top: 55%;
+      left: 45%;
+    }
   }
 
   span::before {
@@ -862,7 +882,7 @@ Main components
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
 
-  @media (min-width: $xs-breakpoint) {
+  @media (min-width: $sm-breakpoint) {
     top: $header-height-L;
   }
 
@@ -927,7 +947,7 @@ Main components
   top: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba($secondary-color, .8);
+  background-color: $search-overlay;
   visibility: hidden;
   opacity: 0;
   @include backface-visibility(hidden);

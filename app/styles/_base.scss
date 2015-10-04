@@ -2,263 +2,41 @@
 // Base Styles
 // ==========================================================================
 
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+html {
+  font-size: $base__font-size;
+}
+
+*, *::after, *::before {
+  @include box-sizing(border-box);
+}
+
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font: {
+    size: 1rem;
+    family: $font-family--primary; // variables inside partials > _variables.scss
+  }
+  font-weight: $font-weight--medium;
+  color: $color-5;
+  background-color: lighten($color-8, 30%);
+}
+
+
+a {
+  color: $color-6;
+  text-decoration: none;
 }
 
 .container-fluid {
   padding: 0;
 }
 
-body {
-  background: $light-grey $i;
-}
 
-// ==========================================================================
-// Menu
-// ==========================================================================
-
-.main-header {
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  -o-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-  height: $header-height-mobile;
-  text-align: center;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 1200;
-
-  @media (min-width: $xs-breakpoint) {
-    height: $header-height-L;
-  }
-
-
-  &.condensed {
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-    -o-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-    height: 50px;
-    border-bottom: 1px solid #e4e4e4;
-
-    .brand-logo-giftutors {
-      -webkit-transition: all 0.25s linear;
-      -moz-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
-      background-position: 0 0;
-      width: 79px;
-      height: 29px;
-      background-size: 221px 392px;
-    }
-
-    .brand-logo-cont {
-      margin: 10px auto 0 auto;
-    }
-
-    .menu-button {
-      margin: 1.5px 0;
-      width: 2.15em;
-      height: 1.85em;
-      -webkit-transition: all 0.25s linear;
-      -moz-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
-    }
-
-    .header-right {
-      float: left;
-      position: absolute;
-      right: 5%;
-      padding: 0;
-      -webkit-transition: all 0.25s linear;
-      -moz-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
-    }
-
-    .header-right-social {
-      display: block;
-    }
-
-    .header-item {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 12px 10px 8px;
-      -webkit-transition: all 0.25s linear;
-      -moz-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
-
-      &.social-link {
-        display: none;
-      }
-    }
-
-
-  } // end of nested .condensed
-
-
-  .header-menu {
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-    margin-left: -100%;
-    background-repeat: no-repeat;
-    float: left;
-    margin-top: 26px;
-    margin-bottom: 26px;
-    height: 38px;
-    right: 175px;
-    width: 50px;
-    cursor: pointer;
-    position: relative;
-    font-size: 38px;
-    color: #959595;
-  }
-
-  .menu-button {
-    cursor: pointer;
-  }
-
-  .header-logo-container {
-    width: 100%;
-    height: 1em;
-    position: relative;
-    float: left;
-  }
-
-  .brand-logo-cont {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 0;
-  }
-
-  .header-right {
-    float: left;
-    position: absolute;
-    right: 4%;
-    margin-top: 15px;
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-
-    @media (min-width: $xs-breakpoint) {
-      margin-top: 30px;
-      right: 5%;
-    }
-  }
-
-  .header-item {
-    position: relative;
-    padding: 30px 10px;
-    display: inline-block;
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-    cursor: pointer;
-    display: none;
-
-    .social-link {
-      @media (min-width: $xs-breakpoint) {
-        display: inline-block;
-      }
-    }
-  }
-
-  .header-right-social {
-    display: block;
-    vertical-align: middle;
-    text-align: right;
-    font-size: 0;
-
-    .icon {
-      -webkit-transition: all 0.15s linear;
-      -moz-transition: all 0.15s linear;
-      -o-transition: all 0.15s linear;
-      transition: all 0.15s linear;
-      font-size: 30px;
-      background-repeat: no-repeat;
-      width: 33px;
-      height: 30px;
-      display: inline-block;
-      background-position: center center;
-      color: #959595;
-      color: #959595;
-      text-align: center;
-    }
-  }
-
-  [class^="icon-"], [class*=" icon-"] {
-    font-family: 'mic';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .icon-search:before {
-    content: "\e61c";
-  }
-} // end of main-header
-
-.brand-logo-giftutors {
-  //  background-image: url('/images/logo.png');
-  // background-repeat: no-repeat;
-  display: inline-block;
-  position: relative;
-  bottom: 0;
-  cursor: pointer;
-  vertical-align: top;
-  // background-size: 397px 704px;
-  // background-position: 0 0;
-  //  width: 142px;
-  //  height: 52px;
-  -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  -o-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-
-  img {
-    height: 25px;
-    width: auto;
-    margin: 15px 0;
-
-    @media (min-width: $xs-breakpoint) {
-      height: 50px;
-      width: auto;
-      margin: 20px 0;
-    }
-  }
-}
-
-.fa-facebook, .fa-twitter, .fa-comment {
-  color: $social-icon-colors;
-  font-size: 20px;
-  margin: 0 8px;
-
-  &:hover {
-    color: $social-icon-colors-hover;
-  }
-  @media (min-width: $xs-breakpoint) {
-    font-size: 30px;
-  }
-}
 
 
 .cd-search-trigger span::before, .cd-search-trigger span::after {
@@ -311,3 +89,19 @@ body {
 .inline-element {
   display: inline-block $i;
 }
+
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+button:focus {
+  outline: none;
+}
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+// ==========================================================================
+// Base Styles
+// ==========================================================================

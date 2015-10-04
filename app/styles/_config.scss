@@ -4,20 +4,36 @@
 
 // Paste Snippets
 
-/* http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,400,700,800);
 
-$fountain-blue  : #52bab3;
-$emerald        : #5ece7f;
-$sunglo         : #e67478;
-$coral          : #ff784f;
-$purple-majesty : #9279c3;
-$scooter        : #39add1; */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'codropsicons';
+  src: url('../fonts/codropsicons/codropsicons.eot');
+  src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+  url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+  url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'feathericons';
+  src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+  src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+  url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+  url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+  url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
 
 // Font Stacks
 
-$font-url--google : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-url--google : 'http://fonts.googleapis.com/css?family=Lato:100,400,700';
 
-$font-family--primary : 'Lato', 'Helevtica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary : 'Raleway', Arial, sans-serif;
 $font-family--secondary : 'Helevtica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
@@ -162,6 +178,8 @@ $social-icon-colors-hover: #3abbca;
 $main-color: #3abbca;
 $secondary-color: #25ced1;
 
+$search-overlay :  rgba($secondary-color, .8);
+
 $dark-color: #333;
 
 $light-grey: #f8f5f3;
@@ -180,6 +198,5 @@ $modal-background : #fff;
 $modal-overlay : rgba(37, 206, 209, 0.8);
 $modal-font-color : #222;
 $modal-background : #fff;
-$modal-background : #fff;
-$modal-background : #fff;
 
+$button-font: 'Lato', Calibri, Arial, sans-serif;
