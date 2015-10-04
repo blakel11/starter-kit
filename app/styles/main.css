@@ -256,11 +256,15 @@ a {
 .grid figure p.icon-links {
   float: right;
   display: inline-block;
-  margin-top: 2px; }
+  margin-top: 5px; }
 
 .grid figure p.author-info {
   float: left;
   margin: 7px 0 5px 10px; }
+  @media (min-width: 468px) {
+    .grid figure p.author-info {
+      margin-top: -1px;
+      text-align: left; } }
   .grid figure p.author-info span {
     font-weight: 600; }
 
@@ -283,6 +287,11 @@ button:focus {
   width: 100%;
   background-color: white;
   z-index: 1200; }
+  .main-header * {
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
   @media (min-width: 768px) {
     .main-header {
       height: 90px; } }
@@ -291,23 +300,26 @@ button:focus {
     -moz-transition: all 0.25s linear;
     -o-transition: all 0.25s linear;
     transition: all 0.25s linear;
-    height: 50px;
+    height: 55px;
     border-bottom: 1px solid #e4e4e4; }
-    .main-header.condensed .brand-logo-giftutors {
+    .main-header.condensed .menu-button {
+      margin: 11px 0 10px 5%;
+      width: 40px;
+      height: 34px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
-      background-position: 0 0;
-      width: 79px;
-      height: 29px;
-      background-size: 221px 392px; }
-    .main-header.condensed .brand-logo-cont {
-      margin: 10px auto 0 auto; }
-    .main-header.condensed .menu-button {
-      margin: 1.5px 0;
-      width: 2.15em;
-      height: 1.85em;
+      transition: all 0.25s linear; }
+    .main-header.condensed .header-right-social .fa-facebook, .main-header.condensed .header-right-social .fa-twitter {
+      font-size: 23px;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; }
+    .main-header.condensed .brand-logo-giftutors img {
+      height: 25px;
+      width: auto;
+      margin: 15px 0;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
@@ -317,6 +329,7 @@ button:focus {
       position: absolute;
       right: 5%;
       padding: 0;
+      margin-top: 14px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
@@ -326,7 +339,6 @@ button:focus {
     .main-header.condensed .header-item {
       margin-top: 0;
       margin-bottom: 0;
-      padding: 12px 10px 8px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
@@ -363,7 +375,7 @@ button:focus {
     float: left;
     position: absolute;
     right: 4%;
-    margin-top: 15px;
+    margin-top: 33px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
@@ -374,7 +386,7 @@ button:focus {
         right: 5%; } }
   .main-header .header-item {
     position: relative;
-    padding: 3px;
+    padding: 3px 4px;
     float: left;
     display: inline-block;
     -webkit-transition: all 0.15s linear;
@@ -400,6 +412,9 @@ button:focus {
       text-align: center; }
     .main-header .header-right-social .fa-facebook, .main-header .header-right-social .fa-twitter {
       font-size: 23px; }
+      @media (min-width: 768px) {
+        .main-header .header-right-social .fa-facebook, .main-header .header-right-social .fa-twitter {
+          font-size: 30px; } }
   .main-header [class^="icon-"], .main-header [class*=" icon-"] {
     font-family: 'mic';
     speak: none;
@@ -443,9 +458,6 @@ button:focus {
   margin: 0 8px; }
   .fa-facebook:hover, .fa-twitter:hover, .fa-comment:hover {
     color: #3abbca; }
-  @media (min-width: 768px) {
-    .fa-facebook, .fa-twitter, .fa-comment {
-      font-size: 30px; } }
 
 .menu-wrap a {
   color: #b8b7ad; }
@@ -582,6 +594,9 @@ Primary style
 -------------------------------- */
 .main-header input[type="search"] {
   line-height: 3rem; }
+  @media (min-width: 1170px) {
+    .main-header input[type="search"] {
+      line-height: 3.3rem; } }
 .main-header *, .main-header *::after, .main-header *::before {
   box-sizing: border-box; }
 .main-header input {
@@ -632,7 +647,7 @@ Main components
   min-height: 100vh;
   z-index: 2; }
 .main-header .cd-main-header {
-  height: 90px;
+  height: 55px;
   background: #ffffff;
   z-index: 3; }
   .nav-is-fixed .main-header .cd-main-header {
@@ -667,7 +682,8 @@ Main components
 .cd-header-buttons {
   position: relative;
   display: inline-block;
-  float: left; }
+  float: left;
+  margin-right: 3px; }
   .cd-header-buttons li {
     display: inline-block; }
   @media only screen and (max-width: 1169px) {
@@ -719,6 +735,9 @@ Main components
     .cd-search-trigger::before {
       width: 24px;
       height: 24px; } }
+  .condensed .cd-search-trigger::before {
+    width: 18px;
+    height: 18px; }
 .cd-search-trigger::after {
   /* handle */
   height: 3px;
@@ -740,6 +759,10 @@ Main components
       width: 9px;
       bottom: 8px;
       right: 5px; } }
+  .condensed .cd-search-trigger::after {
+    width: 8px;
+    right: 11px;
+    bottom: 14px; }
 .cd-search-trigger span {
   /* container for the X icon */
   position: absolute;
@@ -776,6 +799,10 @@ Main components
       width: 30px;
       top: 55%;
       left: 45%; } }
+  .condensed .cd-search-trigger span::before, .condensed .cd-search-trigger span::after {
+    width: 22px;
+    top: 50%;
+    left: 50%; }
 .cd-search-trigger span::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1356,7 +1383,7 @@ Main components
   transition: opacity .3s 0s, visibility 0s .3s; }
   @media (min-width: 768px) {
     .cd-search {
-      top: 90px; } }
+      top: 55px; } }
   .cd-search form {
     height: 100%;
     width: 100%; }
@@ -1510,15 +1537,12 @@ Main Components
     box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); }
     @media (min-width: 468px) {
       .cd-main-content.is-fixed .cd-tab-filter-wrapper {
-        top: 90px; } }
+        top: 55px; } }
   .cd-main-content.is-fixed .cd-filter {
     position: fixed;
     height: 100vh;
     overflow: hidden;
     top: 55px; }
-    @media (min-width: 468px) {
-      .cd-main-content.is-fixed .cd-filter {
-        top: initial; } }
     .cd-main-content.is-fixed .cd-filter form {
       height: 100vh;
       overflow: auto;
@@ -1552,7 +1576,6 @@ xtab-filter
 .cd-tab-filter {
   /* tabbed navigation style on mobile - dropdown */
   position: relative;
-  height: 50px;
   width: 140px;
   margin: 0 auto;
   z-index: 1; }
@@ -1624,7 +1647,8 @@ xtab-filter
         background: transparent;
         position: static;
         box-shadow: none;
-        text-align: center; }
+        text-align: center;
+        margin: 0; }
       .cd-tab-filter li {
         display: inline-block; }
         .cd-tab-filter li.placeholder {
@@ -1636,7 +1660,7 @@ xtab-filter
         color: #9a9a9a;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.3rem; }
+        font-size: .9rem; }
         .no-touch .cd-tab-filter a:hover {
           color: #41307c; }
         .cd-tab-filter a.selected {
@@ -1672,7 +1696,8 @@ xgallery
       padding-right: 5%;
       padding: 26px 0; } }
   .cd-gallery > ul {
-    padding-left: 0; }
+    padding-left: 0;
+    text-align: center; }
     @media (min-width: 768px) {
       .cd-gallery > ul {
         padding-left: 40px; } }
@@ -1767,7 +1792,6 @@ xfilter
     line-height: 50px;
     width: 60px;
     color: #ffffff;
-    font-size: 1.3rem;
     text-align: center;
     background: #37296a;
     opacity: 0;
@@ -1815,7 +1839,7 @@ xfilter
       text-indent: 0;
       color: #9a9a9a;
       text-transform: uppercase;
-      font-size: 1.3rem;
+      font-size: .9rem;
       font-weight: 700;
       padding-left: 24px;
       background-position: left center;
@@ -1833,19 +1857,20 @@ xcustom form elements
 
 -------------------------------- */
 .cd-filter-content {
-  padding-left: 0; }
+  padding-left: 0;
+  list-style: none; }
 
 .cd-filter-block {
-  margin-bottom: 1.6em; }
+  margin-bottom: .2rem; }
   .cd-filter-block h4 {
     /* filter block title */
     position: relative;
+    font-size: 1.2rem;
     margin-bottom: .2em;
     padding: 10px 0 10px 20px;
     color: #9a9a9a;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.3rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1888,8 +1913,9 @@ xcustom form elements
   .cd-filter-block input[type='text'],
   .cd-filter-block select {
     max-width: 100%;
-    width: 16rem;
-    padding: .8em;
+    width: 11rem;
+    padding: .4em;
+    font-size: 1.3rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -1906,8 +1932,7 @@ xcustom form elements
     /* custom style for the search element */
     border-color: transparent;
     background-color: #e6e6e6;
-    /* prevent jump - ios devices */
-    font-size: 1.6rem !important; }
+    /* prevent jump - ios devices */ }
   .cd-filter-block input[type='search']::-webkit-search-cancel-button {
     display: none; }
   .cd-filter-block .cd-select {
@@ -1953,7 +1978,8 @@ xcustom form elements
   .cd-filter-block .checkbox-label,
   .cd-filter-block .radio-label {
     padding-left: 24px;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    margin-top: 4px;
     color: black;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -2052,6 +2078,12 @@ a:hover, a:focus {
     background: #222;
     text-align: center;
     cursor: pointer; }
+    @media (min-width: 768px) {
+      .grid figure {
+        height: 210px;
+        min-width: 350px; } }
+    .filter-is-visible .grid figure {
+      min-width: 320px; }
     .grid figure img {
       position: relative;
       display: block;
@@ -2086,7 +2118,7 @@ a:hover, a:focus {
         font-weight: 800; }
     .grid figure p {
       letter-spacing: 1px;
-      font-size: 68.5%; }
+      font-size: .65rem; }
 
 .grid figure figcaption,
 .grid figure figcaption > a {
@@ -2109,8 +2141,8 @@ figcaption {
 figure.effect-zoe figcaption {
   top: auto;
   bottom: 0;
-  padding: .95em 1em 1em;
-  height: 3.75em;
+  padding: 1rem;
+  height: 3.75rem;
   background: #fff;
   color: #3c4a50; }
   @media (min-width: 768px) {
@@ -2133,8 +2165,8 @@ figure.effect-zoe:hover p.icon-links a:focus {
 
 figure.effect-zoe p.description {
   position: absolute;
-  bottom: 2.6em;
-  padding: 2em .3em 1em;
+  bottom: 3.8em;
+  padding: 2rem .3rem 2.5rem;
   color: #fff;
   text-transform: none;
   font-size: 19px;
@@ -2146,12 +2178,19 @@ figure.effect-zoe p.description {
   -webkit-backface-visibility: hidden;
   /* Fix for Chrome 37.0.2062.120 (Mac) */
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.2)), color-stop(100%, transparent));
+  /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
-  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%);
-  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 50%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0); }
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#bf0000',GradientType=0 );
+  /* IE6-9 */ }
   @media (min-width: 468px) {
     figure.effect-zoe p.description {
       top: 3.8em; } }
@@ -2302,7 +2341,7 @@ perspective effects (not including the modals and the overlay).
   margin: 0;
   padding: 0.4em;
   text-align: center;
-  font-size: 2.4em;
+  font-size: 1.8rem;
   font-weight: 300;
   opacity: 0.8;
   background: rgba(0, 0, 0, 0.1);
@@ -2312,7 +2351,7 @@ perspective effects (not including the modals and the overlay).
   padding: 15px 30px 15px;
   margin: 0;
   font-weight: 300;
-  font-size: 1.15em; }
+  font-size: 1rem; }
 
 .md-content > div p {
   margin: 0;

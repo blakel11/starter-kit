@@ -51,10 +51,6 @@ Main Components
       overflow: hidden;
       top: $header-height-mobile;
 
-      @media (min-width: $xs-breakpoint) {
-        top: initial;
-      }
-
       form {
         height: 100vh;
         overflow: auto;
@@ -64,7 +60,7 @@ Main Components
 
     .cd-filter-trigger {
       position: fixed;
-      top: $header-height-mobile;
+      top: $header-height-S;
     }
 
     @include MQ(M) {
@@ -101,7 +97,6 @@ xtab-filter
 .cd-tab-filter {
   /* tabbed navigation style on mobile - dropdown */
   position: relative;
-  height: $tab-filter-height;
   width: 140px;
   margin: 0 auto;
   z-index: 1;
@@ -192,6 +187,7 @@ xtab-filter
       position: static;
       box-shadow: none;
       text-align: center;
+      margin: 0;
     }
 
     li {
@@ -210,7 +206,7 @@ xtab-filter
       color: $color-8;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 1.3rem;
+      font-size: .9rem;
 
       .no-touch &:hover {
         color: $color-6;
@@ -262,6 +258,7 @@ xgallery
 
     > ul {
       padding-left: 0;
+      text-align: center;
 
       @media (min-width: $sm-breakpoint) {
         padding-left: 40px;
@@ -372,9 +369,7 @@ xfilter
     height: $tab-filter-height;
     line-height: $tab-filter-height;
     width: 60px;
-
     color: $color-7;
-    font-size: 1.3rem;
     text-align: center;
 
     background: darken($color-6, 5%);
@@ -434,7 +429,7 @@ xfilter
     text-indent: 0;
     color: $color-8;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: .9rem;
     font-weight: 700;
 
     padding-left: 24px;
@@ -460,21 +455,21 @@ xcustom form elements
 -------------------------------- */
 .cd-filter-content {
   padding-left: 0;
+  list-style: none;
 }
 
 .cd-filter-block {
-  margin-bottom: 1.6em;
+  margin-bottom: .2rem;
 
   h4 {
     /* filter block title */
     position: relative;
+    font-size: 1.2rem;
     margin-bottom: .2em;
     padding: 10px 0 10px 20px;
-
     color: $color-8;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.3rem;
 
     @include user-select(none);
     cursor: pointer;
@@ -516,8 +511,9 @@ xcustom form elements
   input[type='text'],
   select {
     max-width: 100%;
-    width: 16rem;
-    padding: .8em;
+    width: 11rem;
+    padding: .4em;
+    font-size: 1.3rem;
     @include appearance(none);
     box-shadow: none;
 
@@ -533,7 +529,6 @@ xcustom form elements
     border-color: transparent;
     background-color: darken($color-7, 10%);
     /* prevent jump - ios devices */
-    font-size: 1.6rem !important;
   }
 
   input[type='search']::-webkit-search-cancel-button {
@@ -595,7 +590,8 @@ xcustom form elements
   .checkbox-label,
   .radio-label {
     padding-left: 24px;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    margin-top: 4px;
     color: $content-filter-color;
     @include user-select(none);
 

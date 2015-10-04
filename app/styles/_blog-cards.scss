@@ -23,8 +23,12 @@
     text-align: center;
     cursor: pointer;
 
-    &.effect-zoe {
-
+    @media (min-width: $sm-breakpoint) {
+      height: 210px;
+      min-width: 350px;
+    }
+    .filter-is-visible & {
+      min-width: 320px;
     }
 
     img {
@@ -75,7 +79,7 @@
 
     p {
       letter-spacing: 1px;
-      font-size: 68.5%;
+      font-size: .65rem;
     }
   }
 }
@@ -107,8 +111,8 @@ figure.effect-zoe {
   figcaption {
     top: auto;
     bottom: 0;
-    padding: .95em 1em 1em;
-    height: 3.75em;
+    padding: 1rem;
+    height: 3.75rem;
     background: #fff;
     color: #3c4a50;
 
@@ -138,8 +142,8 @@ figure.effect-zoe:hover p.icon-links a:focus {
 
 figure.effect-zoe p.description {
   position: absolute;
-  bottom: 2.6em;
-  padding: 2em .3em 1em;
+  bottom: 3.8em;
+  padding: 2rem .3rem 2.5rem;
   color: #fff;
   text-transform: none;
   font-size: 19px;
@@ -149,13 +153,14 @@ figure.effect-zoe p.description {
   -webkit-transition: 0.35s;
   transition: 0.35s;
   -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
-  background: -moz-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%,rgba(0,0,0,0.0) 100%);
-  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(50%,rgba(0,0,0,0.20)),color-stop(100%,rgba(0,0,0,0.0)));
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%,rgba(0,0,0,0.0) 100%);
-  background: -o-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%);
-  background: -ms-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0);
+
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.20) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.20)),  color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,.20) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%, rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%, rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.20) 50%, rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#bf0000',GradientType=0 ); /* IE6-9 */
 
 
   @media (min-width:$xs-breakpoint) {

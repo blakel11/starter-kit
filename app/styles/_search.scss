@@ -7,6 +7,10 @@ Primary style
 .main-header {
   input[type="search"] {
     line-height: 3rem;
+
+    @media (min-width: 1170px) {
+      line-height: 3.3rem;
+    }
   }
 
   *, *::after, *::before {
@@ -112,6 +116,7 @@ Main components
   position: relative;
   display: inline-block;
   float: left;
+  margin-right: 3px;
 
   li {
     display: inline-block;
@@ -171,6 +176,11 @@ Main components
       width: 24px;
       height: 24px;
     }
+
+    .condensed & {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &::after {
@@ -187,6 +197,12 @@ Main components
       width: 9px;
       bottom: 8px;
       right: 5px;
+    }
+
+    .condensed & {
+      width: 8px;
+      right: 11px;
+      bottom: 14px;
     }
   }
 
@@ -222,6 +238,12 @@ Main components
       width: 30px;
       top: 55%;
       left: 45%;
+    }
+
+    .condensed & {
+      width: 22px;
+      top: 50%;
+      left: 50%;
     }
   }
 
@@ -883,7 +905,7 @@ Main components
   transition: opacity .3s 0s, visibility 0s .3s;
 
   @media (min-width: $sm-breakpoint) {
-    top: $header-height-L;
+    top: $header-height-S;
   }
 
   form {

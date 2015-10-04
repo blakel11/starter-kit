@@ -16,6 +16,10 @@
   background-color: white;
   z-index: 1200;
 
+  * {
+    @include quick-transition;
+  }
+
   @media (min-width: $sm-breakpoint) {
     height: $header-height-L;
   }
@@ -26,32 +30,29 @@
     -moz-transition: all 0.25s linear;
     -o-transition: all 0.25s linear;
     transition: all 0.25s linear;
-    height: 50px;
+    height: $header-height-S;
     border-bottom: 1px solid #e4e4e4;
 
-    .brand-logo-giftutors {
-      -webkit-transition: all 0.25s linear;
-      -moz-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
-      background-position: 0 0;
-      width: 79px;
-      height: 29px;
-      background-size: 221px 392px;
-    }
-
-    .brand-logo-cont {
-      margin: 10px auto 0 auto;
-    }
-
     .menu-button {
-      margin: 1.5px 0;
-      width: 2.15em;
-      height: 1.85em;
+      margin: 11px 0 10px 5%;
+      width: 40px;
+      height: 34px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
       transition: all 0.25s linear;
+    }
+
+    .header-right-social .fa-facebook,.header-right-social .fa-twitter {
+      font-size: 23px;
+      @include quick-transition;
+    }
+
+    .brand-logo-giftutors img {
+      height: 25px;
+      width: auto;
+      margin: 15px 0;
+      @include quick-transition;
     }
 
     .header-right {
@@ -59,6 +60,7 @@
       position: absolute;
       right: 5%;
       padding: 0;
+      margin-top: 14px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
@@ -72,7 +74,6 @@
     .header-item {
       margin-top: 0;
       margin-bottom: 0;
-      padding: 12px 10px 8px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
@@ -123,7 +124,7 @@
     float: left;
     position: absolute;
     right: 4%;
-    margin-top: 15px;
+    margin-top: 33px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
@@ -137,7 +138,7 @@
 
   .header-item {
     position: relative;
-    padding: 3px;
+    padding: 3px 4px;
     float: left;
     display: inline-block;
     -webkit-transition: all 0.15s linear;
@@ -168,6 +169,10 @@
 
     .fa-facebook, .fa-twitter {
       font-size: 23px;
+
+      @media (min-width: $sm-breakpoint) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -228,9 +233,6 @@
 
   &:hover {
     color: $social-icon-colors-hover;
-  }
-  @media (min-width: $sm-breakpoint) {
-    font-size: 30px;
   }
 }
 

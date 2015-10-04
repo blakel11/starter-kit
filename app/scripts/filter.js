@@ -1,4 +1,16 @@
 jQuery(document).ready(function($){
+
+	$(window).scroll(function () {
+		var y = $(this).scrollTop();
+
+		if (y >= 150) {
+			$('.main-header').addClass('condensed');
+		}
+		else{
+			$('.main-header').removeClass('condensed');
+		}
+	})
+
 	//open/close lateral filter
 	$('.cd-filter-trigger').on('click', function(){
 		triggerFilter(true);
