@@ -1383,7 +1383,7 @@ Main components
   transition: opacity .3s 0s, visibility 0s .3s; }
   @media (min-width: 768px) {
     .cd-search {
-      top: 55px; } }
+      top: 90px; } }
   .cd-search form {
     height: 100%;
     width: 100%; }

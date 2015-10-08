@@ -905,7 +905,7 @@ Main components
   transition: opacity .3s 0s, visibility 0s .3s;
 
   @media (min-width: $sm-breakpoint) {
-    top: $header-height-S;
+    top: $header-height-L;
   }
 
   form {
