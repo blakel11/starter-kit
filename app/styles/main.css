@@ -1558,7 +1558,7 @@ Main Components
       .cd-main-content.is-fixed .cd-tab-filter-wrapper {
         top: 55px; } }
   .cd-main-content.is-fixed .cd-gallery {
-    padding-top: 55px; }
+    padding-top: 25px; }
   .cd-main-content.is-fixed .cd-filter {
     position: fixed;
     height: 100vh;
