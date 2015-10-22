@@ -2369,7 +2369,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 1; }
 
 .hero-article {
-  background: url(/images/giftutors-iphone-about.jpg);
+  background: url("./images/giftutors-iphone-about.jpg");
   height: 300px;
   background-repeat: no-repeat;
   background-position-y: 50%;

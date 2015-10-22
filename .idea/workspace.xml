@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b338995-2900-48d9-a347-449518ce5800" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/giftutors-iphone-about.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/hotspot-iphone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/ios9-notes-app-upgrade.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/ios9-update-cleanup-storage-space.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/make-everything-bigger.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/siri-find-film.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/slo-mo-videos.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/app/lib/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/app/lib/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/app/lib/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/app/lib/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_base.scss" afterPath="$PROJECT_DIR$/app/styles/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_blog-cards.scss" afterPath="$PROJECT_DIR$/app/styles/_blog-cards.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_blog-main.scss" afterPath="$PROJECT_DIR$/app/styles/_blog-main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_config.scss" afterPath="$PROJECT_DIR$/app/styles/_config.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_content-filter.scss" afterPath="$PROJECT_DIR$/app/styles/_content-filter.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_menu.scss" afterPath="$PROJECT_DIR$/app/styles/_menu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_search.scss" afterPath="$PROJECT_DIR$/app/styles/_search.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css.map" afterPath="$PROJECT_DIR$/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css.map" afterPath="$PROJECT_DIR$/dist/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/styles/main.css" afterPath="$PROJECT_DIR$/.tmp/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="$PROJECT_DIR$/dist/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="giftutors-redesign.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +28,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-258.26923">
-              <caret line="395" column="18" selection-start-line="395" selection-start-column="18" selection-end-line="395" selection-end-column="18" />
+            <state vertical-scroll-proportion="-1.2195122">
+              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_blog-main.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/styles/_blog-main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27945206">
+              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -78,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/_menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33136094">
-              <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.6415094">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -91,7 +78,7 @@
       <file leaf-file-name="_search.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/_search.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1132076">
+            <state vertical-scroll-proportion="-2.4339623">
               <caret line="947" column="15" selection-start-line="947" selection-start-column="15" selection-end-line="947" selection-end-column="15" />
               <folding />
             </state>
@@ -154,14 +141,14 @@
         <option value="$PROJECT_DIR$/app/styles/_modal.scss" />
         <option value="$PROJECT_DIR$/app/scripts/filter.js" />
         <option value="$PROJECT_DIR$/dist/scripts/main.min.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/_config.scss" />
         <option value="$PROJECT_DIR$/app/styles/_blog-cards.scss" />
-        <option value="$PROJECT_DIR$/app/styles/_blog-main.scss" />
         <option value="$PROJECT_DIR$/app/styles/_content-filter.scss" />
         <option value="$PROJECT_DIR$/app/styles/_base.scss" />
         <option value="$PROJECT_DIR$/app/styles/_search.scss" />
         <option value="$PROJECT_DIR$/app/styles/_menu.scss" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/_blog-main.scss" />
       </list>
     </option>
   </component>
@@ -782,30 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_blog-main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9068493">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-258.26923">
-          <caret line="395" column="18" selection-start-line="395" selection-start-column="18" selection-end-line="395" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_content-filter.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.076923">
-          <caret line="688" column="1" selection-start-line="688" selection-start-column="1" selection-end-line="688" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_helpers.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.807693">
@@ -822,14 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_search.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1132076">
-          <caret line="947" column="15" selection-start-line="947" selection-start-column="15" selection-end-line="947" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_blog-cards.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9622642">
@@ -838,10 +793,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2195122">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33136094">
-          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+        <state vertical-scroll-proportion="-0.6415094">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4339623">
+          <caret line="947" column="15" selection-start-line="947" selection-start-column="15" selection-end-line="947" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_content-filter.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.076923">
+          <caret line="688" column="1" selection-start-line="688" selection-start-column="1" selection-end-line="688" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_blog-main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27945206">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
           <folding />
         </state>
       </provider>
