@@ -102,20 +102,20 @@
         <li class="placeholder">
           <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
         </li>
-        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Alarm</a></li>
-        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Browser</a></li>
-        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Camera</a></li>
-        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Messaging</a></li>
-        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Settings</a></li>
-        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Siri</a></li>
-        <li class="filter" data-filter=".color-5"><a href="#0" data-type="color-5">Tools</a></li>
+        <li class="filter" data-filter="all"><a class="selected" href="#0">All</a></li>
+        <li class="filter" data-filter=".siri"><a href="#0">Alarm</a></li>
+        <li class="filter" data-filter=".message"><a href="#0">Browser</a></li>
+        <li class="filter" data-filter=".photo"><a href="#0">Camera</a></li>
+        <li class="filter" data-filter=".color-2"><a href="#0">Messaging</a></li>
+        <li class="filter" data-filter=".color-1"><a href="#0">Settings</a></li>
+        <li class="filter" data-filter=".color-2"><a href="#0">Siri</a></li>
+        <li class="filter" data-filter=".color-5"><a href="#0">Tools</a></li>
       </ul> <!-- cd-filters -->
     </div> <!-- cd-tab-filter -->
   </div> <!-- cd-tab-filter-wrapper -->
-  <section class="container-fluid cd-gallery">
+  <section id="mixContainer" class="container-fluid cd-gallery">
     <div class="row">
-      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+      <div class="col-sm-6 col-lg-4 mix siri">
         <figure class="card-container">
           <div class="card">
             <img class="img-responsive card-img-top" src="./images/ios9-notes-app-upgrade.jpg" alt="ios9-notes-app-upgrade">
@@ -134,7 +134,7 @@
           </p>
         </figure>
       </div>
-      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+      <div class="col-sm-6 col-lg-4 mix photo">
         <figure class="card-container">
           <div class="card">
             <img class="img-responsive card-img-top" src="./images/slo-mo-videos.jpg" alt="slo-mo-videos">
@@ -154,7 +154,7 @@
         </figure>
       </div>
       <div class="clearfix hidden-lg-up hidden-xs-down"></div>
-      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+      <div class="col-sm-6 col-lg-4 mix siri">
         <figure class="card-container">
           <div class="card">
             <img class="img-responsive card-img-top" src="./images/siri-find-film.jpg" alt="siri-find-film">
@@ -174,7 +174,7 @@
         </figure>
       </div>
       <div class="clearfix hidden-md-down"></div>
-      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+      <div class="col-sm-6 col-lg-4 mix message">
         <figure class="card-container">
           <div class="card">
             <img class="img-responsive card-img-top" src="./images/ios9-update-cleanup-storage-space.jpg" alt="ios9-update-cleanup-storage-space">
@@ -194,7 +194,7 @@
         </figure>
       </div>
       <div class="clearfix hidden-lg-up hidden-xs-down"></div>
-      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+      <div class="col-sm-6 col-lg-4 mix message">
         <figure class="card-container">
           <div class="card">
             <img class="img-responsive card-img-top" src="./images/make-everything-bigger.jpg" alt="make-everything-bigger">
@@ -213,7 +213,7 @@
           </p>
         </figure>
       </div>
-      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+      <div class="col-sm-6 col-lg-4 mix siri">
         <figure class="card-container">
           <div class="card">
             <img class="img-responsive card-img-top" src="./images/hotspot-iphone.jpg" alt="hotspot-iphone">
