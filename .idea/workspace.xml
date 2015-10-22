@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8b338995-2900-48d9-a347-449518ce5800" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_content-filter.scss" afterPath="$PROJECT_DIR$/app/styles/_content-filter.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/filter.js" afterPath="$PROJECT_DIR$/app/scripts/filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css.map" afterPath="$PROJECT_DIR$/dist/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/styles/main.css" afterPath="$PROJECT_DIR$/.tmp/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="$PROJECT_DIR$/dist/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="giftutors-redesign.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,13 +40,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="filter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/filter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.814815">
-              <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.5796703">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
               <folding>
-                <element signature="e#4450#6684#0" expanded="false" />
+                <element signature="e#4514#6748#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_content-filter.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_content-filter.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/_content-filter.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33136094">
+            <state vertical-scroll-proportion="-4.3584905">
               <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
               <folding />
             </state>
@@ -118,8 +124,8 @@
         <option value="$PROJECT_DIR$/app/styles/_blog-cards.scss" />
         <option value="$PROJECT_DIR$/app/scripts/jquery.mixitup.min.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/filter.js" />
         <option value="$PROJECT_DIR$/app/styles/_content-filter.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/filter.js" />
       </list>
     </option>
   </component>
@@ -791,21 +797,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/filter.js">
+    <entry file="file://$PROJECT_DIR$/app/styles/_content-filter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.814815">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-          <folding>
-            <element signature="e#4450#6684#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-4.3584905">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_content-filter.scss">
+    <entry file="file://$PROJECT_DIR$/app/scripts/filter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33136094">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.5796703">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding>
+            <element signature="e#4514#6748#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

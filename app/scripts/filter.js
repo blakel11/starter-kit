@@ -66,6 +66,9 @@ jQuery(document).ready(function($){
 	$(window).on('scroll', function(){
 		fixGallery();
 	});
+	$('body').bind('touchmove', function(e) {
+		fixGallery();
+	});
 
 	function fixGallery() {
 		var offsetTop = $('.cd-main-content').offset().top,
