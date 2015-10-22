@@ -262,6 +262,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .card {
   cursor: pointer;
+  margin-bottom: .3rem;
 }
 
 .card-block {
@@ -275,18 +276,19 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .date-footer {
   font-size: .9rem;
-  padding-bottom: .6rem;
-  margin-bottom: .5rem;
+  padding-bottom: .3rem;
+  margin-bottom: .2rem;
   border-bottom: .0625rem solid $date-bottom-border;
 }
 
 .icon-links {
-  margin-bottom: .4rem;
+  margin-bottom: 0;
 }
 
 .mix {
-  background: white;
-  @media (min-width: $xs-breakpoint) {
-    background: transparent;
+  @media (max-width: $xs-breakpoint - 1) {
+    background: white;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 }
