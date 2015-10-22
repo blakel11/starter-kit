@@ -123,8 +123,8 @@
   .header-right {
     float: left;
     position: absolute;
-    right: 4%;
-    margin-top: 17px;
+    right: 5%;
+    margin-top: 14px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
@@ -258,7 +258,7 @@
   background: transparent;
   width: 40px ;
   height: 34px;
-  margin: 11px 0 10px 4%;
+  margin: 11px 0 10px 5%;
 
   @media (min-width: $sm-breakpoint) {
     width: 60px;

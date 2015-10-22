@@ -218,14 +218,15 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   color: #331d35;
-  background-color: #e7e7e7; }
+  background-color: #e5e5e5; }
 
 a {
   color: #41307c;
   text-decoration: none; }
 
-.container-fluid {
-  padding: 0; }
+.fa span {
+  margin-left: .7rem;
+  font-size: .95rem; }
 
 .cd-search-trigger span::before, .cd-search-trigger span::after {
   color: #333 !important;
@@ -374,8 +375,8 @@ button:focus {
   .main-header .header-right {
     float: left;
     position: absolute;
-    right: 4%;
-    margin-top: 17px;
+    right: 5%;
+    margin-top: 14px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
@@ -475,7 +476,7 @@ button:focus {
   background: transparent;
   width: 40px;
   height: 34px;
-  margin: 11px 0 10px 4%; }
+  margin: 11px 0 10px 5%; }
   @media (min-width: 768px) {
     .menu-button {
       width: 60px;
@@ -1383,7 +1384,25 @@ Main components
   transition: opacity .3s 0s, visibility 0s .3s; }
   @media (min-width: 768px) {
     .cd-search {
-      top: 90px; } }
+      top: 90px;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; } }
+  @media (min-width: 768px) {
+    .condensed .cd-search {
+      top: 55px;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; } }
+  @media (min-width: 1170px) {
+    .condensed .cd-search {
+      top: 55px;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; } }
   .cd-search form {
     height: 100%;
     width: 100%; }
@@ -1413,9 +1432,9 @@ Main components
   .cd-search.is-visible {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-    -moz-transition: opacity .3s 0s, visibility 0s 0s;
-    transition: opacity .3s 0s, visibility 0s 0s; }
+    -webkit-transition: all .3s 0s, visibility 0s 0s;
+    -moz-transition: all .3s 0s, visibility 0s 0s;
+    transition: all .3s 0s, visibility 0s 0s; }
   .nav-is-fixed .cd-search {
     position: fixed; }
   @media only screen and (min-width: 1170px) {
@@ -1692,17 +1711,7 @@ xgallery
 
 -------------------------------- */
 .cd-gallery {
-  padding: 0px 0 26px; }
-  @media (min-width: 468px) {
-    .cd-gallery {
-      padding-left: 5%;
-      padding-right: 5%; } }
-  .cd-gallery > ul {
-    padding-left: 0;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .cd-gallery > ul {
-        padding-left: 40px; } }
+  padding-bottom: 26px; }
   .cd-gallery li {
     display: none; }
     @media (min-width: 468px) {
@@ -2061,66 +2070,13 @@ a:hover, a:focus {
 .grid {
   position: relative;
   margin: 0 auto;
-  padding: 1em 0 0;
+  padding: 1em 0.5em 0.5em;
   max-width: 1000px;
   list-style: none;
   text-align: center; }
   @media (min-width: 468px) {
     .grid {
       padding: 1em 0 4em; } }
-  .grid figure {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
-    width: 48%;
-    background: #222;
-    text-align: center;
-    cursor: pointer; }
-    @media (min-width: 768px) {
-      .grid figure {
-        height: 210px;
-        min-width: 350px; } }
-    .filter-is-visible .grid figure {
-      min-width: 320px; }
-    .grid figure img {
-      position: relative;
-      display: block;
-      height: 290px;
-      max-width: 100%;
-      opacity: 0.9; }
-      @media (min-width: 468px) {
-        .grid figure img {
-          height: initial;
-          min-height: 100%; } }
-    .grid figure figcaption {
-      padding: 2em;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 1.25em;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      /* Anchor will cover the whole item by default */
-      /* For some effects it will show as a button */ }
-      .grid figure figcaption::before, .grid figure figcaption::after {
-        pointer-events: none; }
-      .grid figure figcaption > a {
-        z-index: 1000;
-        text-indent: 200%;
-        white-space: nowrap;
-        font-size: 0;
-        opacity: 0; }
-    .grid figure h2 {
-      word-spacing: -0.15em;
-      font-weight: 300; }
-      .grid figure h2 span {
-        font-weight: 800; }
-    .grid figure p {
-      letter-spacing: 1px;
-      font-size: .65rem; }
 
 .grid figure figcaption,
 .grid figure figcaption > a {
@@ -2258,6 +2214,28 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     float: none;
     margin: 0 auto;
     width: 100%; } }
+.card-container {
+  padding: .6rem;
+  margin: .4rem 0;
+  background: white; }
+  .card-container .fa-facebook, .card-container .fa-twitter, .card-container .fa-comment, .card-container .fa-envelope {
+    margin: .5rem 1rem 0;
+    cursor: pointer; }
+
+.card {
+  cursor: pointer; }
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+.date-footer {
+  padding-bottom: .6rem;
+  border-bottom: 0.0625rem solid #e5e5e5; }
+
+.icon-links {
+  margin-bottom: .4rem; }
+
 button {
   border: none;
   padding: 0.6em 1.2em;
@@ -2391,7 +2369,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 1; }
 
 .hero-article {
-  background: url("http://splitshire.com/wp-content/uploads/2014/06/SplitShire_IMG_9572.jpg");
+  background: url(/images/giftutors-iphone-about.jpg);
   height: 300px;
   background-repeat: no-repeat;
   background-position-y: 50%;
@@ -2414,6 +2392,7 @@ perspective effects (not including the modals and the overlay).
     top: 110px;
     padding: 20px 2%;
     font-size: 1.9rem;
+    font-weight: 600;
     color: #fff;
     -webkit-transition: 0.35s;
     transition: 0.35s;

@@ -1,7 +1,7 @@
 .grid {
   position: relative;
   margin: 0 auto;
-  padding: 1em 0 0;
+  padding: 1em 0.5em 0.5em;
   max-width: 1000px;
   list-style: none;
   text-align: center;
@@ -10,78 +10,78 @@
     padding: 1em 0 4em;
   }
 
-  figure {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
-    width: 48%;
-    background: $grid-overlay;
-    text-align: center;
-    cursor: pointer;
-
-    @media (min-width: $sm-breakpoint) {
-      height: 210px;
-      min-width: 350px;
-    }
-    .filter-is-visible & {
-      min-width: 320px;
-    }
-
-    img {
-      position: relative;
-      display: block;
-      height: 290px;
-      max-width: 100%;
-      opacity: 0.9;
-
-      @media (min-width: $xs-breakpoint) {
-        height: initial;
-        min-height: 100%;
-      }
-    }
-
-    figcaption {
-      padding: 2em;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 1.25em;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-
-      &::before, &::after {
-        pointer-events: none;
-      }
-
-      /* Anchor will cover the whole item by default */
-      /* For some effects it will show as a button */
-
-      > a {
-        z-index: 1000;
-        text-indent: 200%;
-        white-space: nowrap;
-        font-size: 0;
-        opacity: 0;
-      }
-    }
-
-    h2 {
-      word-spacing: -0.15em;
-      font-weight: 300;
-
-      span {
-        font-weight: 800;
-      }
-    }
-
-    p {
-      letter-spacing: 1px;
-      font-size: .65rem;
-    }
-  }
+  //figure {
+  //  position: relative;
+  //  float: left;
+  //  overflow: hidden;
+  //  margin: 10px 1%;
+  //  min-width: 320px;
+  //  max-width: 480px;
+  //  max-height: 360px;
+  //  width: 48%;
+  //  background: $grid-overlay;
+  //  text-align: center;
+  //  cursor: pointer;
+  //
+  //  @media (min-width: $sm-breakpoint) {
+  //    height: 210px;
+  //    min-width: 350px;
+  //  }
+  //  .filter-is-visible & {
+  //    min-width: 320px;
+  //  }
+  //
+  //  img {
+  //    position: relative;
+  //    display: block;
+  //    height: 290px;
+  //    max-width: 100%;
+  //    opacity: 0.9;
+  //
+  //    @media (min-width: $xs-breakpoint) {
+  //      height: initial;
+  //      min-height: 100%;
+  //    }
+  //  }
+  //
+  //  figcaption {
+  //    padding: 2em;
+  //    color: #fff;
+  //    text-transform: uppercase;
+  //    font-size: 1.25em;
+  //    -webkit-backface-visibility: hidden;
+  //    backface-visibility: hidden;
+  //
+  //    &::before, &::after {
+  //      pointer-events: none;
+  //    }
+  //
+  //    /* Anchor will cover the whole item by default */
+  //    /* For some effects it will show as a button */
+  //
+  //    > a {
+  //      z-index: 1000;
+  //      text-indent: 200%;
+  //      white-space: nowrap;
+  //      font-size: 0;
+  //      opacity: 0;
+  //    }
+  //  }
+  //
+  //  h2 {
+  //    word-spacing: -0.15em;
+  //    font-weight: 300;
+  //
+  //    span {
+  //      font-weight: 800;
+  //    }
+  //  }
+  //
+  //  p {
+  //    letter-spacing: 1px;
+  //    font-size: .65rem;
+  //  }
+  //}
 }
 
 .grid figure figcaption,
@@ -242,4 +242,32 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     margin: 0 auto;
     width: 100%;
   }
+}
+
+
+.card-container {
+  padding: .6rem;
+  margin: .4rem 0;
+  background: white;
+  .fa-facebook, .fa-twitter, .fa-comment, .fa-envelope {
+    margin: .5rem 1rem 0;
+    cursor: pointer;
+  }
+}
+
+.card {
+  cursor: pointer;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.date-footer {
+  padding-bottom: .6rem;
+  border-bottom: .0625rem solid $date-bottom-border;
+}
+
+.icon-links {
+  margin-bottom: .4rem;
 }

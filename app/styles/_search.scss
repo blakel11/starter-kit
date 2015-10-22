@@ -906,6 +906,18 @@ Main components
 
   @media (min-width: $sm-breakpoint) {
     top: $header-height-L;
+    @include quick-transition;
+  }
+
+  .condensed & {
+    @media (min-width: $sm-breakpoint) {
+      top: $header-height-S;
+      @include quick-transition;
+    }
+    @media (min-width: $L) {
+      top: $header-height-S;
+      @include quick-transition;
+    }
   }
 
   form {
@@ -935,9 +947,9 @@ Main components
   &.is-visible {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-    -moz-transition: opacity .3s 0s, visibility 0s 0s;
-    transition: opacity .3s 0s, visibility 0s 0s;
+    -webkit-transition: all .3s 0s, visibility 0s 0s;
+    -moz-transition: all .3s 0s, visibility 0s 0s;
+    transition: all .3s 0s, visibility 0s 0s;
   }
 
   .nav-is-fixed & {

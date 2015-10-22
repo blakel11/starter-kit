@@ -22,7 +22,7 @@ body {
   }
   font-weight: $font-weight--medium;
   color: $color-5;
-  background-color: lighten($color-8, 30%);
+  background-color: #e5e5e5;
 }
 
 
@@ -31,10 +31,12 @@ a {
   text-decoration: none;
 }
 
-.container-fluid {
-  padding: 0;
+.fa {
+  span {
+    margin-left: .7rem;
+    font-size: .95rem;
+  }
 }
-
 
 
 

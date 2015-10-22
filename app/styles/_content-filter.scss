@@ -252,25 +252,25 @@ xgallery
 -------------------------------- */
 
 .cd-gallery {
-    padding: 0px 0 26px;
+  padding-bottom:26px;
 
-    @media (min-width:$xs-breakpoint) {
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-
-    > ul {
-      padding-left: 0;
-      text-align: center;
-
-      @media (min-width: $sm-breakpoint) {
-        padding-left: 40px;
-      }
-    }
+  //@media (min-width:$xs-breakpoint) {
+  //  padding-left: 5%;
+  //  padding-right: 5%;
+  //}
+  //
+  //> ul {
+  //  padding-left: 0;
+  //  text-align: center;
+  //
+  //  @media (min-width: $sm-breakpoint) {
+  //    padding-left: 40px;
+  //  }
+  //}
 
   li {
 
-   // box-shadow: 0 1px 4px rgba(#000, .1);
+    // box-shadow: 0 1px 4px rgba(#000, .1);
     display: none;
 
     @media (min-width: $xs-breakpoint) {
@@ -676,9 +676,9 @@ a:hover, a:focus {
   background-color: $dark-color;
 }
 
-  .cd-filter .cd-close {
-    background: #222;
-  }
+.cd-filter .cd-close {
+  background: #222;
+}
 
 .cd-filter-block input[type='search']:focus, .cd-filter-block input[type='text']:focus, .cd-filter-block select:focus {
   border-color: $main-color;
@@ -686,4 +686,4 @@ a:hover, a:focus {
 
 .cd-filter.filter-is-visible .cd-close {
   text-decoration: none;
- }
+}

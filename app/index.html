@@ -1,319 +1,427 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Daily Sc">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gif Tutors Blog Redesign</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="card-title" content="Daily Sc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gif Tutors Blog Redesign</title>
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Web Starter Kit">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Gif Tutors">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Gif Tutors">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
 
-    <meta name="theme-color" content="#3372DF">
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta name="theme-color" content="#3372DF">
+  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
 
-    <script src="scripts/snap.svg-min.js"></script>
-  </head>
-  <body>
-  <div class="md-modal md-effect-1" id="modal-1">
-    <div class="md-content">
-      <h3>Copy the link</h3>
-      <div>
-        <button class="md-close">http://bit.ly</button>
-      </div>
+  <script src="scripts/snap.svg-min.js"></script>
+</head>
+<body>
+<div class="md-modal md-effect-1" id="modal-1">
+  <div class="md-content">
+    <h3>Copy the link</h3>
+    <div>
+      <button class="md-close">http://bit.ly</button>
     </div>
   </div>
-  <div class="md-overlay"></div>
-  <div class="menu-wrap">
-    <nav class="menu">
-      <div class="icon-list">
-        <a href="#"><span>Home</span></a>
-        <a href="#"><span>Blog</span></a>
-        <a href="#"><span>About</span></a>
-        <a href="#"><span>Contact</span></a>
-      </div>
-    </nav>
-    <button class="close-button" id="close-button">Close Menu</button>
-    <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
-        <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
-      </svg>
+</div>
+<div class="md-overlay"></div>
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="icon-list">
+      <a href="#"><span>Home</span></a>
+      <a href="#"><span>Blog</span></a>
+      <a href="#"><span>About</span></a>
+      <a href="#"><span>Contact</span></a>
     </div>
+  </nav>
+  <button class="close-button" id="close-button">Close Menu</button>
+  <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+      <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+    </svg>
   </div>
-  <header class="main-header">
-    <div class="container-fluid">
-      <div class="header-logo-container">
-        <div class="brand-logo-cont brand-giftutors">
-          <a href="/" class="brand-logo-subbrand brand-logo-giftutors">
-            <img src="./images/logo.png" alt="">
-          </a>
+</div>
+<header class="main-header">
+  <div class="container-fluid">
+    <div class="header-logo-container">
+      <div class="brand-logo-cont brand-giftutors">
+        <a href="/" class="brand-logo-subbrand brand-logo-giftutors">
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+    <menu class="menu-button" id="open-button">Open Menu</menu>
+    <div class="header-right">
+      <div class="header-right-social">
+        <div class="cd-header-buttons">
+          <a class="cd-search-trigger" href="#cd-search"><span></span></a>
+        </div> <!-- cd-header-buttons -->
+        <div class="header-item social-link social-link-facebook hidden-xs-down">
+          <a href="http://www.facebook.com/giftutors" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="header-item social-link social-link-twitter hidden-xs-down">
+          <a href="http://www.twitter.com/giftutors" target="_blank"><i class="fa fa-twitter"></i></a>
         </div>
       </div>
-      <menu class="menu-button" id="open-button">Open Menu</menu>
-      <div class="header-right">
-        <div class="header-right-social">
-          <div class="cd-header-buttons">
-            <a class="cd-search-trigger" href="#cd-search"><span></span></a>
-          </div> <!-- cd-header-buttons -->
-          <div class="header-item social-link social-link-facebook hidden-xs-down">
-            <a href="http://www.facebook.com/giftutors" target="_blank"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+  <div id="cd-search" class="cd-search">
+    <form>
+      <input type="search" placeholder="Search...">
+    </form>
+  </div><!-- /container -->
+</header>
+<div class="cd-overlay"></div>
+<div class="hero-article">
+  <h2>Welcome to GIFtutors! We’re here to end Phone Anger, one GIF tutorial at a time.</h2>
+</div>
+<main class="cd-main-content">
+  <div class="cd-tab-filter-wrapper">
+    <div class="cd-tab-filter">
+      <ul class="cd-filters null-padding">
+        <li class="placeholder">
+          <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+        </li>
+        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Alarm</a></li>
+        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Browser</a></li>
+        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Camera</a></li>
+        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Messaging</a></li>
+        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Settings</a></li>
+        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Siri</a></li>
+        <li class="filter" data-filter=".color-5"><a href="#0" data-type="color-5">Tools</a></li>
+      </ul> <!-- cd-filters -->
+    </div> <!-- cd-tab-filter -->
+  </div> <!-- cd-tab-filter-wrapper -->
+  <section class="container-fluid cd-gallery">
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+        <figure class="card-container">
+          <div class="card">
+            <img class="img-responsive card-img-top" src="/images/ios9-notes-app-upgrade.jpg" alt="ios9-notes-app-upgrade">
+            <figcaption class="card-block">
+              <h2 class="card-title text-center">iOS 9 Notes App on iPhone is Amazeballs. But first–upgrade and resync your notes.</h2>
+            </figcaption>
           </div>
-          <div class="header-item social-link social-link-twitter hidden-xs-down">
-            <a href="http://www.twitter.com/giftutors" target="_blank"><i class="fa fa-twitter"></i></a>
+          <p class="date-footer text-center">
+            September 30, 2015
+          </p>
+          <p class="icon-links text-center">
+            <i class="md-trigger fa fa-comment hidden-md-up" data-modal="modal-1"><span>Text</span></i>
+            <i class="fa fa-envelope hidden-sm-down"><span>Email</span></i>
+            <a href="#"><i class="fa fa-facebook"><span>Share</span></i></a>
+            <a href="#"><i class="fa fa-twitter"><span>Share</span></i></a>
+          </p>
+        </figure>
+      </div>
+      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+        <figure class="card-container">
+          <div class="card">
+            <img class="img-responsive card-img-top" src="/images/slo-mo-videos.jpg" alt="slo-mo-videos">
+            <figcaption class="card-block">
+              <h2 class="card-title text-center">Wanna see how things look in Slo-Mo? Here’s how to do it with your iPhone!</h2>
+            </figcaption>
           </div>
-        </div>
+          <p class="date-footer text-center">
+            September 29, 2015
+          </p>
+          <p class="icon-links text-center">
+            <i class="md-trigger fa fa-comment hidden-md-up" data-modal="modal-1"><span>Text</span></i>
+            <i class="fa fa-envelope hidden-sm-down"><span>Email</span></i>
+            <a href="#"><i class="fa fa-facebook"><span>Share</span></i></a>
+            <a href="#"><i class="fa fa-twitter"><span>Share</span></i></a>
+          </p>
+        </figure>
+      </div>
+      <div class="clearfix hidden-lg-up hidden-xs-down"></div>
+      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+        <figure class="card-container">
+          <div class="card">
+            <img class="img-responsive card-img-top" src="/images/siri-find-film.jpg" alt="siri-find-film">
+            <figcaption class="card-block">
+              <h2 class="card-title text-center">Let’s watch a movie tonight! How to find movies and showtimes with Siri</h2>
+            </figcaption>
+          </div>
+          <p class="date-footer text-center">
+            September 28, 2015
+          </p>
+          <p class="icon-links text-center">
+            <i class="md-trigger fa fa-comment hidden-md-up" data-modal="modal-1"><span>Text</span></i>
+            <i class="fa fa-envelope hidden-sm-down"><span>Email</span></i>
+            <a href="#"><i class="fa fa-facebook"><span>Share</span></i></a>
+            <a href="#"><i class="fa fa-twitter"><span>Share</span></i></a>
+          </p>
+        </figure>
+      </div>
+      <div class="clearfix hidden-md-down"></div>
+      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+        <figure class="card-container">
+          <div class="card">
+            <img class="img-responsive card-img-top" src="/images/ios9-update-cleanup-storage-space.jpg" alt="ios9-update-cleanup-storage-space">
+            <figcaption class="card-block">
+              <h2 class="card-title text-center">Update to iOS 9 Now! But I don’t have space on my iPhone? Help!!</h2>
+            </figcaption>
+          </div>
+          <p class="date-footer text-center">
+            September 27, 2015
+          </p>
+          <p class="icon-links text-center">
+            <i class="md-trigger fa fa-comment hidden-md-up" data-modal="modal-1"><span>Text</span></i>
+            <i class="fa fa-envelope hidden-sm-down"><span>Email</span></i>
+            <a href="#"><i class="fa fa-facebook"><span>Share</span></i></a>
+            <a href="#"><i class="fa fa-twitter"><span>Share</span></i></a>
+          </p>
+        </figure>
+      </div>
+      <div class="clearfix hidden-lg-up hidden-xs-down"></div>
+      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+        <figure class="card-container">
+          <div class="card">
+            <img class="img-responsive card-img-top" src="/images/make-everything-bigger.jpg" alt="make-everything-bigger">
+            <figcaption class="card-block">
+              <h2 class="card-title text-center">Is everything just too small to see on your iPhone? Here’s how to make EVERYTHING bigger!</h2>
+            </figcaption>
+          </div>
+          <p class="date-footer text-center">
+            September 26, 2015
+          </p>
+          <p class="icon-links text-center">
+            <i class="md-trigger fa fa-comment hidden-md-up" data-modal="modal-1"><span>Text</span></i>
+            <i class="fa fa-envelope hidden-sm-down"><span>Email</span></i>
+            <a href="#"><i class="fa fa-facebook"><span>Share</span></i></a>
+            <a href="#"><i class="fa fa-twitter"><span>Share</span></i></a>
+          </p>
+        </figure>
+      </div>
+      <div class="col-sm-6 col-lg-4 mix color-1 check1 radio2 option3">
+        <figure class="card-container">
+          <div class="card">
+            <img class="img-responsive card-img-top" src="/images/hotspot-iphone.jpg" alt="hotspot-iphone">
+            <figcaption class="card-block">
+              <h2 class="card-title text-center">Set up Your iPhone’s WiFi Hotspot like a Pro</h2>
+            </figcaption>
+          </div>
+          <p class="date-footer text-center">
+            September 25, 2015
+          </p>
+          <p class="icon-links text-center">
+            <i class="md-trigger fa fa-comment hidden-md-up" data-modal="modal-1"><span>Text</span></i>
+            <i class="fa fa-envelope hidden-sm-down"><span>Email</span></i>
+            <a href="#"><i class="fa fa-facebook"><span>Share</span></i></a>
+            <a href="#"><i class="fa fa-twitter"><span>Share</span></i></a>
+          </p>
+        </figure>
       </div>
     </div>
-    <div id="cd-search" class="cd-search">
-      <form>
-        <input type="search" placeholder="Search...">
-      </form>
-    </div><!-- /container -->
-  </header>
-  <div class="cd-overlay"></div>
-  <div class="hero-article">
-    <h2>Wanna see how things look in Slo-Mo? Here’s how to do it with your iPhone!</h2>
-  </div>
-  <main class="cd-main-content">
-    <div class="cd-tab-filter-wrapper">
-      <div class="cd-tab-filter">
-        <ul class="cd-filters null-padding">
-          <li class="placeholder">
-            <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+  </section>
+  <!--<section class="container-fluid card-deck-wrapper">-->
+  <!--<div class="col-sm-6 col-lg-4 card-deck effect-zoe mix color-1 check1 radio2 option3">-->
+  <!--<div class="card">-->
+  <!--<img class="img-responsive card-img-top" src="/images/giftutors-iphone-about.jpg" alt="giftutors-iphone-about">-->
+  <!--<div class="card-block">-->
+  <!--<h2 class="card-title text-center">Welcome to GIFtutors! We’re here to end Phone Anger, one GIF tutorial at a time.</h2>-->
+  <!--<p class="icon-links effect-zoe">-->
+  <!--<i class="md-trigger fa fa-comment" data-modal="modal-1"></i>-->
+  <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>&lt;!&ndash; end of asset 1 &ndash;&gt;-->
+  <!--<div class="col-sm-6 col-lg-4 card-deck mix color-1 check1 radio2 option3">-->
+  <!--<div class="card">-->
+  <!--<img class="img-responsive card-img-top" src="/images/slo-mo-videos.jpg" alt="slo-mo-videos">-->
+  <!--<div class="card-block">-->
+  <!--<h2 class="card-title text-center">Wanna see how things look in Slo-Mo? Here’s how to do it with your iPhone!</h2>-->
+  <!--<p class="icon-links effect-zoe">-->
+  <!--<i class="md-trigger fa fa-comment" data-modal="modal-1"></i>-->
+  <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div> &lt;!&ndash; end of asset 2 &ndash;&gt;-->
+  <!--<div class="col-sm-6 col-lg-4 card-deck mix color-1 check1 radio2 option3">-->
+  <!--<div class="card">-->
+  <!--<img class="img-responsive card-img-top" src="/images/siri-find-film.jpg" alt="siri-find-film">-->
+  <!--<div class="card-block">-->
+  <!--<h2 class="card-title text-center">Let’s watch a movie tonight! How to find movies and showtimes with Siri</h2>-->
+  <!--<p class="icon-links effect-zoe">-->
+  <!--<i class="md-trigger fa fa-comment" data-modal="modal-1"></i>-->
+  <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>&lt;!&ndash; end of asset 3 &ndash;&gt;-->
+  <!--<div class="col-sm-6 col-lg-4 card-deck mix color-1 check1 radio2 option3">-->
+  <!--<div class="card">-->
+  <!--<img class="img-responsive card-img-top" src="/images/ios9-update-cleanup-storage-space.jpg" alt="ios9-update-cleanup-storage-space">-->
+  <!--<div class="card-block">-->
+  <!--<h2 class="card-title text-center">Update to iOS 9 Now! But I don’t have space on my iPhone? Help!!</h2>-->
+  <!--<p class="icon-links effect-zoe">-->
+  <!--<i class="md-trigger fa fa-comment" data-modal="modal-1"></i>-->
+  <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div> &lt;!&ndash; end of asset 4 &ndash;&gt;-->
+  <!--<div class="col-sm-6 col-lg-4 card-deck mix color-1 check1 radio2 option3">-->
+  <!--<div class="card">-->
+  <!--<img class="img-responsive card-img-top" src="/images/make-everything-bigger.jpg" alt="make-everything-bigger">-->
+  <!--<div class="card-block">-->
+  <!--<h2 class="card-title text-center">Is everything just too small to see on your iPhone? Here’s how to make EVERYTHING bigger!</h2>-->
+  <!--<p class="icon-links effect-zoe">-->
+  <!--<i class="md-trigger fa fa-comment" data-modal="modal-1"></i>-->
+  <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div> &lt;!&ndash; end of asset 5 &ndash;&gt;-->
+  <!--<div class="col-sm-6 col-lg-4 card-deck mix color-1 check1 radio2 option3">-->
+  <!--<div class="card">-->
+  <!--<img class="img-responsive card-img-top" src="/images/hotspot-iphone.jpg" alt="hotspot-iphone">-->
+  <!--<div class="card-block">-->
+  <!--<h2 class="card-title text-center">Set up Your iPhone’s WiFi Hotspot like a Pro</h2>-->
+  <!--<p class="icon-links effect-zoe">-->
+  <!--<i class="md-trigger fa fa-comment" data-modal="modal-1"></i>-->
+  <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div> &lt;!&ndash; end of asset 6 &ndash;&gt;-->
+  <!--<div class="cd-fail-message">No results found</div>-->
+  <!--</section> &lt;!&ndash; cd-gallery &ndash;&gt;-->
+
+  <div class="cd-filter">
+    <form>
+      <div class="cd-filter-block">
+        <h2>Search</h2>
+
+        <div class="cd-filter-content">
+          <input type="search" placeholder="Search">
+        </div> <!-- cd-filter-content -->
+      </div> <!-- cd-filter-block -->
+      <div class="cd-filter-block">
+        <h2>Check boxes</h2>
+        <ul class="cd-filter-content cd-filters list">
+          <li>
+            <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+            <label class="checkbox-label" for="checkbox1">Alarm</label>
           </li>
-          <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-          <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Alarm</a></li>
-          <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Browser</a></li>
-          <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Camera</a></li>
-          <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Messaging</a></li>
-          <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Settings</a></li>
-          <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Siri</a></li>
-          <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Tools</a></li>
-        </ul> <!-- cd-filters -->
-      </div> <!-- cd-tab-filter -->
-    </div> <!-- cd-tab-filter-wrapper -->
-    <section class="cd-gallery">
-      <ul>
-        <li class="mix color-1 check1 radio2 option3"><div class="grid">
-          <figure class="effect-zoe">
-            <img src="https://static.pexels.com/photos/154/people-apple-iphone-writing.jpg" alt="img25"/>
-            <p class="description">Welcome to GIFtutors! We’re here to end Phone Anger, one GIF tutorial at a time.</p>
-            <figcaption>
-              <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span><br class="hidden-xs-down"> 9/30/2015</p>
-              <p class="icon-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
-              </p>
-            </figcaption>
-          </figure>
-        </div></li> <!-- end of asset 1 -->
-        <li class="mix color-1 check1 radio2 option3"><div class="grid">
-          <figure class="effect-zoe">
-            <img src="http://iphone-tutorial.s3-us-west-1.amazonaws.com/wp-content/uploads/2015/08/23091649/slo-mo-videos.jpg" alt="img25"/>
-            <p class="description">Wanna see how things look in Slo-Mo? Here’s how to do it with your iPhone!</p>
-            <figcaption>
-              <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span><br class="hidden-xs-down"> 9/30/2015</p>
-              <p class="icon-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
-              </p>
-            </figcaption>
-          </figure>
-        </div></li> <!-- end of asset 2 -->
-        <li class="mix color-1 check1 radio2 option3"><div class="grid">
-          <figure class="effect-zoe">
-            <img src="http://iphone-tutorial.s3-us-west-1.amazonaws.com/wp-content/uploads/2015/08/23102450/siri-find-film.jpg" alt="img25"/>
-            <p class="description">Let’s watch a movie tonight! How to find movies and showtimes with Siri</p>
-            <figcaption>
-              <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span><br class="hidden-xs-down"> 9/30/2015</p>
-              <p class="icon-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
-              </p>
-            </figcaption>
-          </figure>
-        </div></li> <!-- end of asset 3 -->
-        <li class="mix color-1 check1 radio2 option3"><div class="grid">
-          <figure class="effect-zoe">
-            <img src="http://iphone-tutorial.s3-us-west-1.amazonaws.com/wp-content/uploads/2015/09/16112655/ios9-update-cleanup-storage-space.jpg" alt="img25"/>
-            <p class="description">Update to iOS 9 Now! But I don’t have space on my iPhone? Help!!</p>
-            <figcaption>
-              <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span><br class="hidden-xs-down"> 9/30/2015</p>
-              <p class="icon-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
-              </p>
-            </figcaption>
-          </figure>
-        </div></li> <!-- end of asset 4 -->
-        <li class="mix color-1 check1 radio2 option3"><div class="grid">
-          <figure class="effect-zoe">
-            <img src="http://iphone-tutorial.s3-us-west-1.amazonaws.com/wp-content/uploads/2015/06/08110010/hotspot-iphone.jpg" alt="img25"/>
-            <p class="description">Set up Your iPhone’s WiFi Hotspot like a Pro</p>
-            <figcaption>
-              <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span><br class="hidden-xs-down"> 9/30/2015</p>
-              <p class="icon-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
-              </p>
-            </figcaption>
-          </figure>
-        </div></li> <!-- end of asset 5 -->
-        <li class="mix color-1 check1 radio2 option3"><div class="grid">
-          <figure class="effect-zoe">
-            <img src="http://iphone-tutorial.s3-us-west-1.amazonaws.com/wp-content/uploads/2015/09/01001642/make-everything-bigger.jpg" alt="img25"/>
-            <p class="description">Is everything just too small to see on your iPhone? Here’s how to make EVERYTHING bigger!</p>
-            <figcaption>
-              <img class="author-img img-responsive img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKyAAAAJDkyOTMzMWE1LTg5ZDgtNGU4ZS1iNzI1LWZlMDA0YjQxZmM5OQ.jpg" alt="blake's profile picture">
-              <p class="author-info">By: <span>Blake Lieberman</span><br class="hidden-xs-down"> 9/30/2015</p>
-              <p class="icon-links">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              <i class="md-trigger fa fa-comment" data-modal="modal-1"></i>
-              </p>
-            </figcaption>
-          </figure>
-        </div></li> <!-- end of asset 6 -->
-      <div class="cd-fail-message">No results found</div>
-    </section> <!-- cd-gallery -->
 
-    <div class="cd-filter">
-      <form>
-        <div class="cd-filter-block">
-          <h4>Search</h4>
+          <li>
+            <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+            <label class="checkbox-label" for="checkbox2">Siri</label>
+          </li>
 
-          <div class="cd-filter-content">
-            <input type="search" placeholder="Search">
-          </div> <!-- cd-filter-content -->
-        </div> <!-- cd-filter-block -->
-        <div class="cd-filter-block">
-          <h4>Check boxes</h4>
-          <ul class="cd-filter-content cd-filters list">
-            <li>
-              <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-              <label class="checkbox-label" for="checkbox1">Alarm</label>
-            </li>
+          <li>
+            <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+            <label class="checkbox-label" for="checkbox3">Settings</label>
+          </li>
+        </ul> <!-- cd-filter-content -->
+      </div> <!-- cd-filter-block -->
 
-            <li>
-              <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-              <label class="checkbox-label" for="checkbox2">Siri</label>
-            </li>
+      <!--<div class="cd-filter-block">-->
+      <!--<h2>Select</h2>-->
 
-            <li>
-              <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-              <label class="checkbox-label" for="checkbox3">Settings</label>
-            </li>
-          </ul> <!-- cd-filter-content -->
-        </div> <!-- cd-filter-block -->
+      <!--<div class="cd-filter-content">-->
+      <!--<div class="cd-select cd-filters">-->
+      <!--<select class="filter" name="selectThis" id="selectThis">-->
+      <!--<option value="">Choose an option</option>-->
+      <!--<option value=".option1">Option 1</option>-->
+      <!--<option value=".option2">Option 2</option>-->
+      <!--<option value=".option3">Option 3</option>-->
+      <!--<option value=".option4">Option 4</option>-->
+      <!--</select>-->
+      <!--</div> &lt;!&ndash; cd-select &ndash;&gt;-->
+      <!--</div> &lt;!&ndash; cd-filter-content &ndash;&gt;-->
+      <!--</div> &lt;!&ndash; cd-filter-block &ndash;&gt;-->
 
-        <!--<div class="cd-filter-block">-->
-        <!--<h4>Select</h4>-->
+      <!--<div class="cd-filter-block">-->
+      <!--<h2>Radio buttons</h2>-->
 
-        <!--<div class="cd-filter-content">-->
-        <!--<div class="cd-select cd-filters">-->
-        <!--<select class="filter" name="selectThis" id="selectThis">-->
-        <!--<option value="">Choose an option</option>-->
-        <!--<option value=".option1">Option 1</option>-->
-        <!--<option value=".option2">Option 2</option>-->
-        <!--<option value=".option3">Option 3</option>-->
-        <!--<option value=".option4">Option 4</option>-->
-        <!--</select>-->
-        <!--</div> &lt;!&ndash; cd-select &ndash;&gt;-->
-        <!--</div> &lt;!&ndash; cd-filter-content &ndash;&gt;-->
-        <!--</div> &lt;!&ndash; cd-filter-block &ndash;&gt;-->
+      <!--<ul class="cd-filter-content cd-filters list">-->
+      <!--<li>-->
+      <!--<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>-->
+      <!--<label class="radio-label" for="radio1">All</label>-->
+      <!--</li>-->
 
-        <!--<div class="cd-filter-block">-->
-        <!--<h4>Radio buttons</h4>-->
+      <!--<li>-->
+      <!--<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">-->
+      <!--<label class="radio-label" for="radio2">Choice 2</label>-->
+      <!--</li>-->
 
-        <!--<ul class="cd-filter-content cd-filters list">-->
-        <!--<li>-->
-        <!--<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>-->
-        <!--<label class="radio-label" for="radio1">All</label>-->
-        <!--</li>-->
+      <!--<li>-->
+      <!--<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">-->
+      <!--<label class="radio-label" for="radio3">Choice 3</label>-->
+      <!--</li>-->
+      <!--</ul> &lt;!&ndash; cd-filter-content &ndash;&gt;-->
+      <!--</div> &lt;!&ndash; cd-filter-block &ndash;&gt;-->
+    </form>
 
-        <!--<li>-->
-        <!--<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">-->
-        <!--<label class="radio-label" for="radio2">Choice 2</label>-->
-        <!--</li>-->
+    <a href="#0" class="cd-close">Close</a>
+  </div> <!-- cd-filter -->
 
-        <!--<li>-->
-        <!--<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">-->
-        <!--<label class="radio-label" for="radio3">Choice 3</label>-->
-        <!--</li>-->
-        <!--</ul> &lt;!&ndash; cd-filter-content &ndash;&gt;-->
-        <!--</div> &lt;!&ndash; cd-filter-block &ndash;&gt;-->
-      </form>
+  <a href="#0" class="cd-filter-trigger">Filters</a>
+</main> <!-- cd-main-content -->
 
-      <a href="#0" class="cd-close">Close</a>
-    </div> <!-- cd-filter -->
+<!-- build:js(app/) ../../scripts/main.min.js -->
+<script src="./lib/js/jquery.min.js"></script>
+<script src="scripts/jquery.mobile.custom.min.js"></script>
+<script src="scripts/jquery.mixitup.min.js"></script>
+<script src="./lib/js/bootstrap.min.js"></script>
 
-    <a href="#0" class="cd-filter-trigger">Filters</a>
-  </main> <!-- cd-main-content -->
+<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+<script src="scripts/classie.js"></script>
+<script src="scripts/main3.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/filter.js"></script>
+<script src="scripts/modalEffects.js"></script>
 
-  <!-- build:js(app/) ../../scripts/main.min.js -->
-  <script src="lib/js/jquery.min.js"></script>
-  <script src="scripts/jquery.mobile.custom.min.js"></script>
-  <script src="scripts/jquery.mixitup.min.js"></script>
-  <script src="lib/js/bootstrap.min.js"></script>
+<!-- for the blur effect -->
+<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+<script>
+  // this is important for IEs
+  var polyfilter_scriptpath = '/scripts/';
+</script>
+<script src="scripts/cssParser.js"></script>
+<script src="scripts/css-filters-polyfill.js">
+  <script src="scripts/main.js"></script>
+<!-- endbuild -->
 
-  <!-- classie.js by @desandro: https://github.com/desandro/classie -->
-  <script src="scripts/classie.js"></script>
-  <script src="scripts/main3.js"></script>
-  <script src="scripts/search.js"></script>
-  <script src="scripts/filter.js"></script>
-  <script src="scripts/modalEffects.js"></script>
-
-  <!-- for the blur effect -->
-  <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-  <script>
-    // this is important for IEs
-    var polyfilter_scriptpath = '/scripts/';
-  </script>
-  <script src="scripts/cssParser.js"></script>
-  <script src="scripts/css-filters-polyfill.js">
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- Built with love using Web Starter Kit -->
-  </body>
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Built with love using Web Starter Kit -->
+</body>
 </html>
