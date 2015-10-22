@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b338995-2900-48d9-a347-449518ce5800" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_blog-cards.scss" afterPath="$PROJECT_DIR$/app/styles/_blog-cards.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css.map" afterPath="$PROJECT_DIR$/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css.map" afterPath="$PROJECT_DIR$/dist/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/styles/main.css" afterPath="$PROJECT_DIR$/.tmp/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="$PROJECT_DIR$/dist/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="giftutors-redesign.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +38,8 @@
       <file leaf-file-name="_blog-cards.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/_blog-cards.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78402364">
-              <caret line="271" column="13" selection-start-line="271" selection-start-column="13" selection-end-line="271" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.58284026">
+              <caret line="267" column="28" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -781,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_blog-cards.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78402364">
-          <caret line="271" column="13" selection-start-line="271" selection-start-column="13" selection-end-line="271" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.58284026">
+          <caret line="267" column="28" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
           <folding />
         </state>
       </provider>
