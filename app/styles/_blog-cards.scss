@@ -246,11 +246,16 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 
 .card-container {
-  padding: .6rem;
+  padding: .6rem 0;
   margin: .4rem 0;
   background: white;
+
+  @media (min-width:$xs-breakpoint) {
+    padding: .6rem;
+  }
   .fa-facebook, .fa-twitter, .fa-comment, .fa-envelope {
     margin: .5rem 1rem 0;
+    font-size: 1.1rem;
     cursor: pointer;
   }
 }
@@ -258,16 +263,30 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .card {
   cursor: pointer;
 }
+
+.card-block {
+  padding: 1.25rem 1rem;
+}
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 0;
   font-weight: 600;
 }
 
 .date-footer {
+  font-size: .9rem;
   padding-bottom: .6rem;
+  margin-bottom: .5rem;
   border-bottom: .0625rem solid $date-bottom-border;
 }
 
 .icon-links {
   margin-bottom: .4rem;
+}
+
+.mix {
+  background: white;
+  @media (min-width: $xs-breakpoint) {
+    background: transparent;
+  }
 }

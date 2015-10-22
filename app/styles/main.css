@@ -226,7 +226,7 @@ a {
 
 .fa span {
   margin-left: .7rem;
-  font-size: .95rem; }
+  font-size: .9rem; }
 
 .cd-search-trigger span::before, .cd-search-trigger span::after {
   color: #333 !important;
@@ -1872,7 +1872,7 @@ xcustom form elements
   list-style: none; }
 
 .cd-filter-block {
-  margin-bottom: .2rem; }
+  margin-bottom: 1.2rem; }
   .cd-filter-block h4 {
     /* filter block title */
     position: relative;
@@ -2215,26 +2215,42 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     margin: 0 auto;
     width: 100%; } }
 .card-container {
-  padding: .6rem;
+  padding: .6rem 0;
   margin: .4rem 0;
   background: white; }
+  @media (min-width: 468px) {
+    .card-container {
+      padding: .6rem; } }
   .card-container .fa-facebook, .card-container .fa-twitter, .card-container .fa-comment, .card-container .fa-envelope {
     margin: .5rem 1rem 0;
+    font-size: 1.1rem;
     cursor: pointer; }
 
 .card {
   cursor: pointer; }
 
+.card-block {
+  padding: 1.25rem 1rem; }
+
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 0;
   font-weight: 600; }
 
 .date-footer {
+  font-size: .9rem;
   padding-bottom: .6rem;
+  margin-bottom: .5rem;
   border-bottom: 0.0625rem solid #e5e5e5; }
 
 .icon-links {
   margin-bottom: .4rem; }
+
+.mix {
+  background: white; }
+  @media (min-width: 468px) {
+    .mix {
+      background: transparent; } }
 
 button {
   border: none;
