@@ -291,6 +291,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .mix {
   @media (max-width: $xs-breakpoint - 1) {
     background: white;
+    margin: .3rem 0;
     padding-left: .5rem;
     padding-right: .5rem;
   }

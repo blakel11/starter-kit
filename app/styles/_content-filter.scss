@@ -38,6 +38,7 @@ Main Components
       left: 0;
       width: 100%;
       box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+      @include quick-transition();
 
       @media (min-width: $xs-breakpoint) {
         top: $header-height-S;
@@ -254,19 +255,6 @@ xgallery
 .cd-gallery {
   padding-bottom:26px;
 
-  //@media (min-width:$xs-breakpoint) {
-  //  padding-left: 5%;
-  //  padding-right: 5%;
-  //}
-  //
-  //> ul {
-  //  padding-left: 0;
-  //  text-align: center;
-  //
-  //  @media (min-width: $sm-breakpoint) {
-  //    padding-left: 40px;
-  //  }
-  //}
 
   li {
 
@@ -311,7 +299,6 @@ xgallery
 
   @include MQ(L) {
     padding: 0px 2%;
-    float: right;
     @include transition(width .3s);
 
     li {
@@ -686,4 +673,17 @@ a:hover, a:focus {
 
 .cd-filter.filter-is-visible .cd-close {
   text-decoration: none;
+}
+
+#mixContainer:after{
+  display: inline-block;
+  width: 100%;
+}
+
+#mixContainer .mix, {
+  display: inline-block;
+}
+
+#mixContainer .mix{
+  display: none;
 }

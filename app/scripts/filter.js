@@ -66,9 +66,6 @@ jQuery(document).ready(function($){
 	$(window).on('scroll', function(){
 		fixGallery();
 	});
-	$('body').bind('touchmove', function(e) {
-		fixGallery();
-	});
 
 	function fixGallery() {
 		var offsetTop = $('.cd-main-content').offset().top,
@@ -84,6 +81,12 @@ jQuery(document).ready(function($){
 	 or:
 	 http://codepen.io/patrickkunka/
 	 *************************************/
+
+	$(function() {
+		if(window.innerWidth >= 468) {
+		$('.mix .card-container').matchHeight();
+		}
+	});
 
 	buttonFilter.init();
 	$('#mixContainer').mixItUp({
@@ -222,3 +225,26 @@ var buttonFilter = {
 		}
 	}
 };
+
+$('.filter a').on('click', function(e) {
+	if(window.innerWidth < 468) {
+		e.preventDefault();
+	}
+});
+
+$('.filter').on('click', function(e) {
+	if(window.innerWidth < 468) {
+		var resetPoint = $('.cd-main-content').offset().top;
+		console.log(resetPoint);
+		resetScroll(resetPoint);
+	}
+});
+
+
+function resetScroll(scroll) {
+	console.log('fired');
+	$('html,body').animate({
+		scrollTop: scroll
+	}, 700);
+}
+

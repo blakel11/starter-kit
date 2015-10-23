@@ -330,7 +330,7 @@ button:focus {
       position: absolute;
       right: 5%;
       padding: 0;
-      margin-top: 14px;
+      margin-top: 15px;
       -webkit-transition: all 0.25s linear;
       -moz-transition: all 0.25s linear;
       -o-transition: all 0.25s linear;
@@ -376,7 +376,7 @@ button:focus {
     float: left;
     position: absolute;
     right: 5%;
-    margin-top: 14px;
+    margin-top: 15px;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
@@ -1553,7 +1553,11 @@ Main Components
     top: 55px;
     left: 0;
     width: 100%;
-    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); }
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
     @media (min-width: 468px) {
       .cd-main-content.is-fixed .cd-tab-filter-wrapper {
         top: 55px; } }
@@ -1743,7 +1747,6 @@ xgallery
   @media only screen and (min-width: 1170px) {
     .cd-gallery {
       padding: 0px 2%;
-      float: right;
       -webkit-transition: width 0.3s;
       -moz-transition: width 0.3s;
       transition: width 0.3s; }
@@ -2067,6 +2070,16 @@ a:hover, a:focus {
 .cd-filter.filter-is-visible .cd-close {
   text-decoration: none; }
 
+#mixContainer:after {
+  display: inline-block;
+  width: 100%; }
+
+#mixContainer .mix {
+  display: inline-block; }
+
+#mixContainer .mix {
+  display: none; }
+
 .grid {
   position: relative;
   margin: 0 auto;
@@ -2253,6 +2266,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 @media (max-width: 467px) {
   .mix {
     background: white;
+    margin: .3rem 0;
     padding-left: .5rem;
     padding-right: .5rem; } }
 
@@ -2390,7 +2404,7 @@ perspective effects (not including the modals and the overlay).
 
 .hero-article {
   background: url("../images/giftutors-iphone-about.jpg");
-  height: 300px;
+  height: 200px;
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: cover;
@@ -2409,9 +2423,9 @@ perspective effects (not including the modals and the overlay).
   .hero-article h2 {
     text-align: center;
     position: relative;
-    top: 110px;
+    top: 105px;
     padding: 20px 2%;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     -webkit-transition: 0.35s;
