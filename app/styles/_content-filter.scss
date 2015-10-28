@@ -34,6 +34,8 @@ Main Components
   &.is-fixed {
     .cd-tab-filter-wrapper {
       position: fixed;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       top: $header-height-mobile;
       left: 0;
       width: 100%;
@@ -51,6 +53,8 @@ Main Components
 
     .cd-filter {
       position: fixed;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       height: 100vh;
       overflow: hidden;
       top: $header-height-mobile;
@@ -64,6 +68,7 @@ Main Components
 
     .cd-filter-trigger {
       position: fixed;
+      -webkit-backface-visibility: hidden;
       top: $header-height-S;
     }
 

@@ -1,16 +1,4 @@
 jQuery(document).ready(function($){
-
-	$(window).scroll(function () {
-		var y = $(this).scrollTop();
-
-		if (y >= 150) {
-			$('.main-header').addClass('condensed');
-		}
-		else{
-			$('.main-header').removeClass('condensed');
-		}
-	})
-
 	//open/close lateral filter
 	$('.cd-filter-trigger').on('click', function(){
 		triggerFilter(true);
@@ -116,10 +104,20 @@ jQuery(document).ready(function($){
 		};
 	})();
 
-	$(".cd-filter-content input[type='search']").keyup(function(){
+	$(".cd-search input[type='search']").keypress(function(e) {
+		if(e.which == 13) {
+			alert('You pressed enter!');
+			$('.cd-overlay').removeClass("is-visible").removeClass('search-is-visible');
+			$('.cd-search').removeClass("is-visible");
+			$('.cd-search-trigger').removeClass("search-is-visible");
+			e.preventDefault();
+		}
+	});
+
+	$(".cd-search input[type='search']").keyup(function(){
 		// Delay function invoked to make sure user stopped typing
 		delay(function(){
-			inputText = $(".cd-filter-content input[type='search']").val().toLowerCase();
+			inputText = $(".cd-search input[type='search']").val().toLowerCase();
 			// Check to see if input field is empty
 			if ((inputText.length) > 0) {
 				$('.mix').each(function() {
