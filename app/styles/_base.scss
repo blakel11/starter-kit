@@ -27,7 +27,7 @@ body {
 
 
 a {
-  color: $color-6;
+  color: $secondary-color;
   text-decoration: none;
 }
 
@@ -130,6 +130,9 @@ $XL:    1440px;
   }
   @else if $canvas == L {
     @media only screen and (min-width: $L) { @content; }
+  }
+  @else {
+    @media only screen and (min-width: $canvas) { @content; }
   }
 }
 

@@ -288,6 +288,14 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .icon-links {
   margin-bottom: 0;
+
+  a {
+    color: #333;
+
+    &:hover {
+      color: $secondary-color $i;
+    }
+  }
 }
 
 .mix {

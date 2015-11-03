@@ -6,18 +6,52 @@
 
 .single-post {
   background: white;
-  //.main-article {
-  //  margin-top: -16%;
-  //  background: white;
-  //}
+
+  .main-header.hide-header {
+    margin-top: -55px;
+  }
+
   .blog-header {
-    padding: 40px 45px 40px;
-    margin-top: -16%;
+    padding: 20px 0;
     background: white;
 
+    @include MQ($sm-breakpoint) {
+      margin-top: -16%;
+      padding: 40px 45px;
+    }
+
     h2 {
-      font-size: 2.2rem;
+      font-size: 1.4rem;
       font-weight: 300;
+      @include MQ($sm-breakpoint){
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .author-footer.author-block {
+    img {
+      @include MQ($xs-breakpoint) {
+        height: 75px;
+      }
+    }
+    .like-block {
+      float: left;
+      margin-bottom: 35px;
+    }
+    .author-info {
+      h3 {
+        font-weight: 800;
+        color: $main-color;
+        letter-spacing: -.5px;
+        @include font-size(22px);
+      }
+      .author-bio {
+        font-size: .85rem;
+      }
+    }
+
+    .media-body {
+      width: auto;
     }
   }
   .author-block {
@@ -25,14 +59,29 @@
     border-top: 1px solid #bbb;
     padding-top: 20px;
 
+
     img {
       height: 34px;
       display:inline-block;
-      margin-right: 20px;
+      margin-right: 10px;
+
+
+      @include MQ($xs-breakpoint) {
+        margin-right: 20px;
+      }
     }
     p {
+      font-size: .75rem;
       display: inline-block;
       margin-bottom: 0;
+
+      @include MQ(321px) {
+        font-size: .85rem;
+      }
+
+      @include MQ($xs-breakpoint) {
+        font-size: 1rem;
+      }
     }
     .like-block {
       float:right;
@@ -43,9 +92,24 @@
         margin-right: 5px;
       }
     }
+
   }
   .blog-summary {
-    padding: 40px 45px 40px;
+    padding: 20px 0px;
+
+    @include MQ($sm-breakpoint) {
+      padding: 40px 45px;
+    }
+  }
+
+  .gif-app {
+    @include MQ($xs-breakpoint){
+     margin-top: 35px;
+    }
+
+    @include MQ($sm-breakpoint) {
+      margin-top: 0;
+    }
   }
 
 
@@ -90,182 +154,55 @@
 
   -------------------------------- */
 
-  .cd-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: $header-height-S;
-    @include clearfix;
-    background-color: darken($color-10, 10%);
-    overflow: hidden;
-
-    /* Force Hardware Acceleration in WebKit */
-    @include transform(translateZ(0));
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-    @include transform(translateY(-100%));
-    @include transition(transform .3s);
-
-    #cd-logo {
-      float: left;
-      margin: 18px 0 0 5%;
-
-      img {
-        display: block;
-        width: 60px;
-        height: 18px;
-      }
-    }
-
-    #cd-action {
-      display: inline-block;
-      float: right;
-      margin: 10px 5% 0 0;
-    }
-
-    .btn {
-      height: 30px;
-      line-height: 30px;
-      padding: 0 2em;
-    }
-
-    &.slide-down {
-      @include transform(translateY(0));
-    }
-
-    @include MQ(L) {
-      height: $header-height-L;
-      background-color: transparent;
-
-      #cd-logo {
-        margin-top: 32px;
-        @include font-size(28px);
-
-        img {
-          width: 80px;
-          height: 25px;
-        }
-      }
-
-      #cd-action {
-        margin: 20px 5% 0 0;
-      }
-
-
-      .btn {
-        height: 50px;
-        line-height: 50px;
-      }
-    }
-  }
-
-  .cd-main-content {
-    overflow: hidden;
-    max-width: $XL;
-    margin: 0 auto;
-
-    @include MQ(L) {
-      position: relative;
-      height: 100%;
-      min-height: 500px;
-      padding: 0 10%;
-    }
-  }
-
-  .cd-product-intro {
-    padding: 50px 5%;
-    text-align: center;
-
-    h1 {
-      margin-bottom: 10px;
-      font-weight: 100;
-      @include font-size(25px);
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    p {
-      padding: 0 0 20px;
-      @include font-size(14px);
-      line-height: 1.8;
-      max-width: 560px;
-      margin: 0 auto;
-    }
-
-    .cd-triggers {
-      @include clearfix;
-    }
-
-    .btn {
-      width: 120px;
-      height: 40px;
-      line-height: 40px;
-      margin-right: 8px;
-    }
-
-    @include MQ(S) {
-      padding: 50px 10%;
-    }
-
-    @include MQ(M) {
-      padding: 50px 15%;
-    }
-
-    @include MQ(L) {
-      /* Force Hardware Acceleration in WebKit */
-      @include transform(translateZ(0));
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-
-      position: absolute;
-      top: 50%;
-      @include transform(translateY(-50%));
-      left: 10%;
-      width: 50%;
-
-      padding: 0;
-      text-align: left;
-
-      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-      -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s;
-
-    }
-  }
-
   #cd-product-tour {
     position: relative;
 
-    @include MQ(L) {
-      width: 100%;
-      max-width: 950px;
-      margin: 0 auto;
+    width: 100%;
+    max-width: 950px;
+    min-height: 570px;
+    margin: 0 auto;
+    @include transform(translateZ(0));
+    @include transition(transform .3s);
+
+    @include MQ(321px) {
+      min-height: 610px;
+    }
+    @include MQ(410px) {
+      min-height: 690px;
+    }
+
+    @include MQ($xs-breakpoint) {
+      min-height: 800px;
+    }
+    @include MQ($sm-breakpoint) {
+      min-height: initial;
       height: 500px;
-      @include transform(translateZ(0));
-      @include transition(transform .3s);
+    }
 
 
-      > ul {
-        list-style: none;
-        height: 100%;
-        width: 100%;
-      }
+    > ul {
+      list-style: none;
+      height: 100%;
+      width: 100%;
     }
   }
 
   .cd-single-item {
     /* product tour - single list item */
-    padding: 50px 5% 120px;
     width: 100%;
-    text-align: center;
-    border-top: 1px solid lighten($color-10, 5%);
+    left: 0;
 
     h2 {
       margin-bottom: 15px;
-      @include font-size(22px);
+      @include font-size(17.75px);
+      font-weight: 300;
+
+      @include MQ(410px) {
+        @include font-size(24px);
+      }
+      @include MQ($sm-breakpoint) {
+          @include font-size(36px);
+      }
     }
 
     p {
@@ -273,93 +210,105 @@
       @include font-size(14px);
       line-height: 1.6;
     }
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
 
-    @include MQ(S) {
-      padding: 50px 10% 120px;
-    }
-
-    @include MQ(M) {
-      padding: 50px 15% 120px;
-
-      @include clearfix;
-
-      .cd-caption {
-        @include column(.5);
-        margin-top: 180px;
-      }
-
-      &:nth-child(2n) .cd-caption {
-        float: right;
-      }
-    }
-
-    @include MQ(L) {
-      position: absolute;
+    @include MQ($sm-breakpoint) {
       top: 50%;
-      @include transform(translateY(-50%));
-      left: 10px;
-      text-align: left;
-      border-top: none;
-      padding: 0;
-      visibility: visible;
+    }
+    text-align: left;
+    border-top: none;
+    padding: 0;
+    visibility: visible;
 
-      &.cd-not-visible {
-        /*need to create a specific class to change visibility value due to a Firefox bug*/
-        /*CSS transition/animation fails when parent element changes visibility attribute*/
-        visibility: hidden;
+    &.cd-not-visible {
+      /*need to create a specific class to change visibility value due to a Firefox bug*/
+      /*CSS transition/animation fails when parent element changes visibility attribute*/
+      visibility: hidden;
+    }
+
+
+
+    p {
+      @include font-size(16px);
+      line-height: 1.5;
+      max-width: 600px;
+    }
+
+    .cd-caption {
+      width: 100%;
+      margin: 0 auto 10px;
+      opacity: 0;
+      text-align:center;
+      @include transform(translateZ(0));
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+
+      @include MQ(410px) {
+        margin: 0 auto 40px;
       }
 
-      h2 {
-        @include font-size(36px);
-        font-weight: 300;
+      @include MQ($xs-breakpoint) {
+        margin-top: 80px;
+        margin-bottom: 0;
       }
 
-      p {
-        @include font-size(16px);
-        line-height: 1.5;
-        max-width: 600px;
-      }
 
-      .cd-caption {
+      @include MQ($sm-breakpoint) {
+        text-align: left;
         @include column(.6, right);
         margin: 80px 0 0 5%;
-        opacity: 0;
-        @include transform(translateZ(0));
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-        -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
-        transition: transform 0.3s, opacity 0.3s;
       }
+    }
 
-       &.cd-active .cd-caption {
-        opacity: 1;
-      }
+    &.cd-active .cd-caption {
+      opacity: 1;
+    }
 
-      &.cd-move-right .cd-caption {
+    &.cd-move-right .cd-caption {
+      @include MQ($M) {
         @include transform(translateX(100px));
       }
+    }
 
-      .cd-image-wrapper {
-        @include transform(translateZ(0));
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-        -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
-        transition: transform 0.3s, opacity 0.3s;
-      }
+    .cd-image-wrapper {
+      left: 2.5px;
+      @include transform(translateZ(0));
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
 
-      &.cd-active .cd-image-wrapper{
-        z-index: 1;
+      @include MQ($sm-breakpoint) {
+        left: 0;
       }
+    }
 
-      &.cd-move-right .cd-image-wrapper img {
-        @include transform(translateX(100%));
-      }
+    &.cd-active .cd-image-wrapper{
+      z-index: 1;
+    }
+
+    &.cd-move-right .cd-image-wrapper img {
+      @include transform(translateX(100%));
     }
   }
 
   .cd-image-container {
     /*wrapper for image (and video - desktop only)*/
-    max-width: 226px;
-    margin: 0 auto;
-    padding-top: 50px;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 10px;
+
+    @include MQ($xs-breakpoint) {
+      max-width: 226px;
+      margin: 60px auto;
+      padding-top: 30px;
+    }
+
+    @include MQ(L) {
+      margin: 0 0 10px;
+    }
 
     > div {
       position: relative;
@@ -369,58 +318,43 @@
       display: block;
     }
 
-    video {
-      display: none;
-    }
-
-    @include MQ(M) {
-      float: right;
-
-      .cd-single-item:nth-child(2n) & {
-        float: left;
-      }
-    }
-
-    @include MQ(L) {
-      height: 402px;
-      @include column(.35);
-      max-width: none;
+    @include MQ($sm-breakpoint){
       padding-top: 0;
+      @include column(.35);
+    }
 
-      > div {
-        display: inline-block;
-        max-width: 100%;
-        max-height: 100%;
+    > div {
+      display: inline-block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    img {
+      //width: 280px;
+      height: 420px;
+
+      @include transition(transform .3s);
+      @include transform(translateZ(0));
+
+      @include MQ(321px) {
+        height: 450px;
       }
 
-      img {
+      @include MQ(410px) {
+        height: 530px;
+      }
+
+      @include MQ($xs-breakpoint) {
+        height: 360px;
+      }
+
+      @include MQ($sm-breakpoint) {
         height: 402px;
-        @include transition(transform .3s);
-        @include transform(translateZ(0));
       }
+    }
 
-      video {
-        /*not inserted in html - will be loaded through jQuery*/
-        display: block;
-        z-index: 1;
-        @include transition(transform .3s);
-        @include transform(translateZ(0));
-        @include transform(translateX(-50%) translateY(-50%) rotate(-90deg));
-        position: absolute;
-        width: 402px;
-        left: 50%;
-        top: 50%;
-        bottom: auto;
-        right: auto;
-        z-index: 1;
-        @include transition(transform .3s);
-        @include transform(translateZ(0));
-        @include transform(translateX(-50%) translateY(-50%) rotate(-90deg));
-      }
-
-      .cd-move-right & img {
-        @include transform(translateX(100%));
-      }
+    .cd-move-right & img {
+      @include transform(translateX(100%));
     }
   }
 
@@ -430,7 +364,7 @@
     @include box-sizing(content-box);
     position: absolute;
     top: -45px;
-    left: -10px;
+    left: -7.5px;
     width: 100%;
     height: 100%;
     border-color: darken($color-10, 8%);
@@ -438,6 +372,11 @@
     border-width: 45px 10px;
     border-radius: 2.5em;
     @include backface-visibility(hidden);
+
+    @include MQ($sm-breakpoint) {
+      left: -10px;
+    }
+
 
     &::after, &::before {
       /*these are the iPhone circle elements*/
@@ -472,20 +411,34 @@
     /* product discover slider navigation */
     margin-top: 20px;
     z-index: 1;
-    width: 100%;
     height: 80px;
     @include clearfix;
-
-    @include MQ(L) {
-      max-width: 950px;
-      margin: 0;
-      position: absolute;
+    max-width: 950px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 80%;
+    @include MQ($sm-breakpoint) {
       right: 0;
-      bottom: 0;
       width: 60%;
     }
 
     a {
+
+      a {
+        visibility: visible;
+        opacity: 1;
+        @include transition(opacity 0.3s 0s, visibility 0s 0s, background 0.2s);
+
+        &.cd-inactive {
+          //visibility: hidden;
+          //opacity: 0;
+          //@include transition(opacity 0.3s 0s, visibility 0s 0.3s, background 0.2s);
+        }
+
+      }
+
       position: relative;
       display: block;
       height: 100%;
@@ -548,22 +501,6 @@
       @include transform(translateX(-50%) translateY(-50%) rotate(180deg));
     }
 
-    @include MQ(L) {
-      display: block;
-
-      a {
-        visibility: visible;
-        opacity: 1;
-        @include transition(opacity 0.3s 0s, visibility 0s 0s, background 0.2s);
-
-        &.cd-inactive {
-          //visibility: hidden;
-          //opacity: 0;
-          //@include transition(opacity 0.3s 0s, visibility 0s 0.3s, background 0.2s);
-        }
-
-      }
-    }
   }
 
 
@@ -593,9 +530,13 @@
   }
 
   .related-posts {
-    margin-top: 60px;
+    margin-top: 25px;
     padding: 45px 0;
     border-top: 1px solid #bbb;
+
+    //@include MQ($sm-breakpoint) {
+    //  margin-top: 60px;
+    //}
 
     > h2 {
       text-align: center;
@@ -604,6 +545,70 @@
 
     .date-footer {
       border: none;
+    }
+  }
+
+  .last-gif-slide {
+   // margin-top: -20px;
+
+    @include MQ($xs-breakpoint) {
+      margin-top: 0;
+    }
+  }
+
+  .cd-dots {
+    /* not visible in the html document - created using jQuery */
+    position: absolute;
+    bottom: 0px;
+    @include center(x); // see partials > _mixins.scss
+    @include clearfix;
+    padding: .2em;
+
+    li {
+      display: inline-block;
+      float: left;
+      margin: 0 10px;
+      pointer-events: none;
+
+      &.selected a {
+        background: $color-1;
+        border-color: $color-1;
+      }
+    }
+
+    a {
+      display: block;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      border: 1px solid lighten($color-1, 40%);
+
+      /* image replacement */
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+
+      @include transition(border-color .2s, background-color .2s);
+    }
+
+    @include MQ(L) {
+
+      li {
+        pointer-events: auto;
+
+        &.selected a {
+          background: darken($color-5, 20%);
+          border-color: darken($color-5, 20%);
+        }
+      }
+
+      a {
+        height: 8px;
+        width: 8px;
+        border-color: darken($color-5, 20%);
+        /* fix a bug in IE9/10 - transparent anchor not clickable */
+        background-color: rgba(#FFF, 0);
+      }
     }
   }
 }
