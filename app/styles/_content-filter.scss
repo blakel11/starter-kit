@@ -27,6 +27,7 @@ Main Components
 }
 
 .cd-main-content {
+  background: $background-color;
   position: relative;
   min-height: 100vh;
   @include clearfix;

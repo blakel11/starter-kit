@@ -1542,6 +1542,7 @@ Main Components
         line-height: 180px; } }
 
 .cd-main-content {
+  background: #e5e5e5;
   position: relative;
   min-height: 100vh; }
   .cd-main-content::after {
@@ -2414,11 +2415,8 @@ perspective effects (not including the modals and the overlay).
   opacity: 1; }
 
 .hero-article {
-  background: url("../images/giftutors-iphone-about.jpg");
+  background: #3F8CC9;
   height: 200px;
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-size: cover;
   margin-top: 55px;
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
@@ -2431,38 +2429,62 @@ perspective effects (not including the modals and the overlay).
   @media (min-width: 768px) {
     .hero-article {
       margin-top: 90px; } }
-  .hero-article h2 {
+  .hero-article h1 {
     text-align: center;
-    position: relative;
-    top: 105px;
-    padding: 20px 2%;
-    font-size: 1.2rem;
-    font-weight: 600;
+    padding: 30px 2% 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #fff;
     -webkit-transition: 0.35s;
     transition: 0.35s;
-    text-shadow: 0 0 6px #000;
     -webkit-backface-visibility: hidden;
-    /* Fix for Chrome 37.0.3062.120 (Mac) */
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.3)), color-stop(100%, transparent));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#bf0000',GradientType=0 );
-    /* IE6-9 */ }
+    /* Fix for Chrome 37.0.3062.120 (Mac) */ }
+    @media (min-width: 468px) {
+      .hero-article h1 {
+        padding: 40px 8% 15px;
+        font-size: 1.8rem;
+        font-weight: 200; } }
     @media (min-width: 768px) {
-      .hero-article h2 {
-        top: 230px;
-        padding: 50px 19%;
-        font-size: 2rem; } }
+      .hero-article h1 {
+        padding: 80px 15% 25px;
+        font-size: 2.7rem; } }
+  .hero-article h4 {
+    text-align: center;
+    padding: 0px 2% 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    -webkit-backface-visibility: hidden;
+    /* Fix for Chrome 37.0.3062.120 (Mac) */ }
+    @media (min-width: 768px) {
+      .hero-article h4 {
+        padding: 0px 0 25px;
+        font-size: 1.7rem; } }
+  .hero-article .iphone-mock {
+    margin: 0 auto;
+    display: block;
+    max-height: 500px;
+    height: 500px; }
+    @media (min-width: 768px) {
+      .hero-article .iphone-mock {
+        padding: 0px 0 25px;
+        font-size: 1.7rem;
+        position: absolute;
+        top: 50px; } }
+  .hero-article .demo-gif {
+    position: absolute;
+    max-height: 384px;
+    height: 384px;
+    top: 58px;
+    left: calc(50% - 108px); }
+    @media (min-width: 768px) {
+      .hero-article .demo-gif {
+        padding: 0px 0 25px;
+        font-size: 1.7rem;
+        top: 109px;
+        left: 30px; } }
 
 .single-post {
   background: white;
